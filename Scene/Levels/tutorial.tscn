@@ -1,0 +1,428 @@
+[gd_scene load_steps=29 format=3 uid="uid://bi7x7jc78rmne"]
+
+[ext_resource type="Script" path="res://tutorial.gd" id="1_8e2vh"]
+[ext_resource type="PackedScene" uid="uid://c0ycfcjclicvk" path="res://Scene/checkpoint.tscn" id="2_4clfi"]
+[ext_resource type="Texture2D" uid="uid://c4wed5vt4x1p3" path="res://assests/Map_Assets/Checkpoint/Dimensional_Portal.png" id="2_n1jov"]
+[ext_resource type="PackedScene" uid="uid://b8ycxj1kuxt6e" path="res://Scene/player.tscn" id="2_nhlbb"]
+[ext_resource type="Texture2D" uid="uid://dvntwam3r3xaw" path="res://assests/Map_Assets/clouds/cloud_single/cloud1.png" id="2_s1c6d"]
+[ext_resource type="Script" path="res://Script/UpDownCloud.gd" id="2_s1j3i"]
+[ext_resource type="Script" path="res://Script/Transitions/End.gd" id="3_aq0u4"]
+[ext_resource type="Texture2D" uid="uid://dfumi4q0ker0y" path="res://assests/Map_Assets/clouds/cloud_single/cloud3.png" id="3_k7s5g"]
+[ext_resource type="AudioStream" uid="uid://uok4c58g1utl" path="res://assests/SoundAssets/Music/Heavenly Loop.ogg" id="3_qnymi"]
+[ext_resource type="PackedScene" uid="uid://bl6jdogdispmk" path="res://Scene/EnemyScene.tscn" id="6_27646"]
+[ext_resource type="PackedScene" uid="uid://vajyhg8oc33l" path="res://Scene/range_enemy.tscn" id="11_08vgw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vdl7"]
+size = Vector2(88, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gwhlv"]
+size = Vector2(80, 32)
+
+[sub_resource type="Animation" id="Animation_w8lio"]
+resource_name = "MoveCloud"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(20, -20), Vector2(20, -150)]
+}
+
+[sub_resource type="Animation" id="Animation_tj1nb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(20, -20)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_j33ev"]
+_data = {
+"MoveCloud": SubResource("Animation_w8lio"),
+"RESET": SubResource("Animation_tj1nb")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_beo51"]
+radius = 5.33334
+
+[sub_resource type="Animation" id="Animation_2tjlw"]
+resource_name = "Portal"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_skkeo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0e1f1"]
+_data = {
+"Portal": SubResource("Animation_2tjlw"),
+"RESET": SubResource("Animation_skkeo")
+}
+
+[sub_resource type="Animation" id="Animation_enwtv"]
+resource_name = "Portal_FadeIn"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Portal_Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Portal_Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_cqkhk"]
+resource_name = "Portal_FadeOut"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Portal_Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Portal_Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_5251o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Portal_Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Portal_Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kgtuk"]
+_data = {
+"Portal_FadeIn": SubResource("Animation_enwtv"),
+"Portal_FadeOut": SubResource("Animation_cqkhk"),
+"RESET": SubResource("Animation_5251o")
+}
+
+[sub_resource type="Animation" id="Animation_xresg"]
+resource_name = "Fade_In"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition UI/Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition UI/Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_mru2m"]
+resource_name = "Fade_Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition UI/Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition UI/Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_bonup"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition UI/Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition UI/Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gi8r7"]
+_data = {
+"Fade_In": SubResource("Animation_xresg"),
+"Fade_Out": SubResource("Animation_mru2m"),
+"RESET": SubResource("Animation_bonup")
+}
+
+[node name="Tutorial" type="Node2D"]
+script = ExtResource("1_8e2vh")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 129
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(0, 0, 0, 320, 384, 320, 384, 288, 448, 288, 448, 224, 512, 224, 512, 192, 576, 192, 576, 240, 960, 240, 960, 192, 1024, 192, 1024, 128, 1088, 128, 1088, 96, 1728, 96, 1728, 320, 2368, 320, 2368, 296, 2696, 296, 2696, 128, 3520, 128, 3520, 0, 3904, 0, 3904, 384, 3904, 512, -256, 512, -256, 0)
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D/CollisionPolygon2D"]
+
+[node name="Clouds" type="Node" parent="."]
+
+[node name="WhiteCloud1" type="StaticBody2D" parent="Clouds"]
+position = Vector2(30, -20)
+
+[node name="Sprite2D" type="Sprite2D" parent="Clouds/WhiteCloud1"]
+position = Vector2(2026, 252)
+texture = ExtResource("2_s1c6d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clouds/WhiteCloud1"]
+position = Vector2(3082, 68)
+shape = SubResource("RectangleShape2D_8vdl7")
+
+[node name="WhiteCloud2" type="StaticBody2D" parent="Clouds"]
+position = Vector2(50, -50)
+
+[node name="Sprite2D" type="Sprite2D" parent="Clouds/WhiteCloud2"]
+position = Vector2(3062, 98)
+texture = ExtResource("2_s1c6d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clouds/WhiteCloud2"]
+position = Vector2(2006, 282)
+shape = SubResource("RectangleShape2D_8vdl7")
+
+[node name="BlueCloud" type="AnimatableBody2D" parent="Clouds"]
+position = Vector2(20, -20)
+script = ExtResource("2_s1j3i")
+
+[node name="MovingCloud" type="Sprite2D" parent="Clouds/BlueCloud"]
+position = Vector2(2628, 292)
+texture = ExtResource("3_k7s5g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clouds/BlueCloud"]
+position = Vector2(2628, 292)
+shape = SubResource("RectangleShape2D_gwhlv")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Clouds/BlueCloud"]
+libraries = {
+"": SubResource("AnimationLibrary_j33ev")
+}
+
+[node name="Checkpoint" parent="." instance=ExtResource("2_4clfi")]
+position = Vector2(544, 184)
+
+[node name="End_Sprite" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0, 1)
+z_index = 1
+position = Vector2(3480, 88)
+scale = Vector2(1.5, 2.25)
+texture = ExtResource("2_n1jov")
+hframes = 3
+vframes = 2
+script = ExtResource("3_aq0u4")
+
+[node name="End_Area2D" type="Area2D" parent="End_Sprite"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="End_Sprite/End_Area2D"]
+shape = SubResource("CapsuleShape2D_beo51")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="End_Sprite"]
+libraries = {
+"": SubResource("AnimationLibrary_0e1f1")
+}
+
+[node name="Player" parent="." instance=ExtResource("2_nhlbb")]
+position = Vector2(176, 296)
+
+[node name="CloseEnemy" type="Node" parent="."]
+
+[node name="Enemy" parent="CloseEnemy" instance=ExtResource("6_27646")]
+position = Vector2(752, 224)
+
+[node name="Enemy2" parent="CloseEnemy" instance=ExtResource("6_27646")]
+position = Vector2(3240, 112)
+
+[node name="Enemy3" parent="CloseEnemy" instance=ExtResource("6_27646")]
+position = Vector2(2824, 112)
+
+[node name="RangeEnemyNode" type="Node" parent="."]
+
+[node name="RangeEnemy2" parent="RangeEnemyNode" instance=ExtResource("11_08vgw")]
+position = Vector2(3112, -8)
+
+[node name="RangeEnemy" parent="RangeEnemyNode" instance=ExtResource("11_08vgw")]
+position = Vector2(2056, 184)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+z_index = -1
+offset_top = -320.0
+offset_right = 3904.0
+offset_bottom = 512.0
+color = Color(0, 0, 0, 1)
+
+[node name="Portal_Transition" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_kgtuk")
+}
+
+[node name="TransitionBackground" type="ColorRect" parent="Portal_Transition"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2704.0
+offset_top = -120.0
+offset_right = 2832.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Transition UI" type="CanvasLayer" parent="."]
+
+[node name="Transition" type="AnimationPlayer" parent="Transition UI"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_gi8r7")
+}
+
+[node name="TransitionBackground" type="ColorRect" parent="Transition UI/Transition"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_qnymi")
+
+[node name="Checkpoint2" parent="." instance=ExtResource("2_4clfi")]
+position = Vector2(1112, 88)
+
+[connection signal="area_entered" from="End_Sprite/End_Area2D" to="End_Sprite" method="_on_area_2d_area_entered"]
+[connection signal="animation_finished" from="Portal_Transition" to="End_Sprite" method="_on_portal_transition_animation_finished"]
+[connection signal="animation_finished" from="Transition UI/Transition" to="End_Sprite" method="_on_transition_animation_finished"]

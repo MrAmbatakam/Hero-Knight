@@ -1,0 +1,225 @@
+[gd_scene load_steps=11 format=3 uid="uid://disy4vrgayvgn"]
+
+[ext_resource type="FontFile" uid="uid://d3rbbr6ogxp1i" path="res://assests/CharacterAssets/Fonts/DungeonFont.ttf" id="1_hw0pj"]
+[ext_resource type="Script" path="res://Script/UI Script/pause_menu.gd" id="1_tpylu"]
+[ext_resource type="FontFile" uid="uid://kcxcqd8gp6p7" path="res://assests/CharacterAssets/Fonts/m5x7.ttf" id="2_ry0hr"]
+[ext_resource type="Texture2D" uid="uid://drhwfpligmh06" path="res://assests/CharacterAssets/Health/heart_16x16.png" id="3_rdvqr"]
+[ext_resource type="AudioStream" uid="uid://dn2go0ve78lve" path="res://assests/SoundAssets/sfx/UISfx/Click_Sfx.mp3" id="5_138dp"]
+[ext_resource type="AudioStream" uid="uid://c6n4kyp7nnfnc" path="res://assests/SoundAssets/sfx/UISfx/Select_Sfx.mp3" id="6_w1uqi"]
+
+[sub_resource type="Animation" id="Animation_xresg"]
+resource_name = "Fade_In"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_mru2m"]
+resource_name = "Fade_Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_bonup"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gi8r7"]
+_data = {
+"Fade_In": SubResource("Animation_xresg"),
+"Fade_Out": SubResource("Animation_mru2m"),
+"RESET": SubResource("Animation_bonup")
+}
+
+[node name="PauseMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tpylu")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -190.0
+offset_right = 150.0
+offset_bottom = -90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_hw0pj")
+theme_override_font_sizes/font_size = 50
+text = "Pause"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -110.0
+offset_right = 150.0
+offset_bottom = 190.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Volume" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ry0hr")
+theme_override_font_sizes/font_size = 40
+text = "Volume"
+horizontal_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+min_value = -25.0
+max_value = 0.0
+step = 0.0
+
+[node name="FullScreen" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ry0hr")
+theme_override_font_sizes/font_size = 40
+text = "Fullscreen"
+
+[node name="LeaveGame" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ry0hr")
+theme_override_font_sizes/font_size = 40
+text = "Leave Game"
+
+[node name="Background" type="ColorRect" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -190.0
+offset_right = 150.0
+offset_bottom = 190.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 521.0
+offset_top = 201.0
+offset_right = 553.0
+offset_bottom = 232.0
+texture = ExtResource("3_rdvqr")
+expand_mode = 1
+
+[node name="Transition" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gi8r7")
+}
+
+[node name="TransitionBackground" type="ColorRect" parent="Transition"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Click_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_138dp")
+volume_db = 5.0
+
+[node name="Select_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_w1uqi")
+volume_db = -10.0
+
+[connection signal="value_changed" from="CenterContainer/VBoxContainer/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/FullScreen" to="." method="_on_full_screen_mouse_entered"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/FullScreen" to="." method="_on_full_screen_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/LeaveGame" to="." method="_on_leave_game_mouse_entered"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/LeaveGame" to="." method="_on_leave_game_pressed"]
+[connection signal="animation_finished" from="Transition" to="." method="_on_transition_animation_finished"]

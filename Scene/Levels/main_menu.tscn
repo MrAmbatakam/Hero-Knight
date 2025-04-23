@@ -1,0 +1,358 @@
+[gd_scene load_steps=13 format=3 uid="uid://dgo3jad75kdwj"]
+
+[ext_resource type="Script" path="res://Script/Transitions/main_menu.gd" id="1_8prl3"]
+[ext_resource type="FontFile" uid="uid://d3rbbr6ogxp1i" path="res://assests/CharacterAssets/Fonts/DungeonFont.ttf" id="1_x1qub"]
+[ext_resource type="FontFile" uid="uid://kcxcqd8gp6p7" path="res://assests/CharacterAssets/Fonts/m5x7.ttf" id="2_fr6x8"]
+[ext_resource type="FontFile" uid="uid://cqv0nebu63pr5" path="res://assests/CharacterAssets/Fonts/m6x11plus.ttf" id="3_68evu"]
+[ext_resource type="Texture2D" uid="uid://23v461flxbnv" path="res://assests/CharacterAssets/Health/hearts/heartDisplay.png" id="3_vlnvi"]
+[ext_resource type="AudioStream" uid="uid://cnbylhtoj67sc" path="res://assests/SoundAssets/Music/One Man Symphony - A New Day's Hurry (Free)/One Man Symphony - A New Day's Hurry (Free) - 01 A New Day Begins (General Background Music).mp3" id="6_55fnj"]
+[ext_resource type="AudioStream" uid="uid://c6n4kyp7nnfnc" path="res://assests/SoundAssets/sfx/UISfx/Select_Sfx.mp3" id="7_m2gm0"]
+[ext_resource type="AudioStream" uid="uid://dn2go0ve78lve" path="res://assests/SoundAssets/sfx/UISfx/Click_Sfx.mp3" id="8_cb6mm"]
+
+[sub_resource type="Animation" id="Animation_xresg"]
+resource_name = "Fade_In"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_mru2m"]
+resource_name = "Fade_Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_bonup"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gi8r7"]
+_data = {
+"Fade_In": SubResource("Animation_xresg"),
+"Fade_Out": SubResource("Animation_mru2m"),
+"RESET": SubResource("Animation_bonup")
+}
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8prl3")
+
+[node name="Title" type="Label" parent="."]
+custom_minimum_size = Vector2(1080, 250)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_x1qub")
+theme_override_font_sizes/font_size = 160
+text = "Hero Knight"
+horizontal_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_top = 250.0
+offset_right = 1080.0
+offset_bottom = 600.0
+
+[node name="MainButtons" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Start" type="Button" parent="CenterContainer/MainButtons"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fr6x8")
+theme_override_font_sizes/font_size = 60
+text = "Start"
+
+[node name="Settings" type="Button" parent="CenterContainer/MainButtons"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fr6x8")
+theme_override_font_sizes/font_size = 60
+text = "Settings"
+
+[node name="Credits" type="Button" parent="CenterContainer/MainButtons"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fr6x8")
+theme_override_font_sizes/font_size = 60
+text = "Credits"
+
+[node name="Quit" type="Button" parent="CenterContainer/MainButtons"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fr6x8")
+theme_override_font_sizes/font_size = 60
+text = "Quit"
+
+[node name="SettingMenuButtons" type="HBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+offset_left = 64.0
+offset_top = 192.0
+offset_right = 1080.0
+offset_bottom = 248.0
+theme_override_constants/separation = 260
+
+[node name="Return" type="Button" parent="SettingMenuButtons"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_fr6x8")
+theme_override_font_sizes/font_size = 60
+text = "Return"
+
+[node name="Volume" type="Label" parent="SettingMenuButtons"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_fr6x8")
+theme_override_font_sizes/font_size = 60
+text = "Volume"
+
+[node name="Fullscreen" type="Button" parent="SettingMenuButtons"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_fr6x8")
+theme_override_font_sizes/font_size = 60
+text = "Fullscreen"
+
+[node name="SettingMenuVolumeBar" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 512.0
+offset_top = 272.0
+offset_right = 528.0
+offset_bottom = 372.0
+
+[node name="VSlider" type="VSlider" parent="SettingMenuVolumeBar"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+min_value = -50.0
+max_value = 0.0
+step = 0.0
+
+[node name="CreditsMenu1" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+offset_top = 192.0
+offset_right = 1080.0
+offset_bottom = 608.0
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="CreditsMenu1"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_68evu")
+theme_override_font_sizes/font_size = 20
+text = "Map: 
+https://szadiart.itch.io/pixel-fantasy-caves
+
+Player:
+https://aamatniekss.itch.io/fantasy-knight-free-pixelart-animated-character
+
+Fonts:
+https://vrtxrry.itch.io/dungeonfont
+https://managore.itch.io/m6x11
+https://managore.itch.io/m5x7
+
+Enemy:
+https://creativekind.itch.io/necromancer-free
+https://creativekind.itch.io/nightborne-warrior"
+
+[node name="More" type="Button" parent="CreditsMenu1"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("2_fr6x8")
+theme_override_font_sizes/font_size = 40
+text = "More
+"
+
+[node name="Return" type="Button" parent="CreditsMenu1"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("2_fr6x8")
+theme_override_font_sizes/font_size = 40
+text = "Return"
+
+[node name="CreditsMenu2" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+offset_top = 192.0
+offset_right = 1080.0
+offset_bottom = 605.0
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="CreditsMenu2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_68evu")
+theme_override_font_sizes/font_size = 20
+text = "Force Field:
+https://cassala.itch.io/bubble-sprites
+
+Traps:
+https://foozlecc.itch.io/trap-packcharacter
+
+Vfx:
+
+"
+
+[node name="Back" type="Button" parent="CreditsMenu2"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("2_fr6x8")
+theme_override_font_sizes/font_size = 40
+text = "Back
+"
+
+[node name="Return" type="Button" parent="CreditsMenu2"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("2_fr6x8")
+theme_override_font_sizes/font_size = 40
+text = "Return"
+
+[node name="MenuBackground" type="ColorRect" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Transition" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gi8r7")
+}
+
+[node name="TransitionBackground" type="ColorRect" parent="Transition"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 176.0
+offset_right = 576.0
+offset_bottom = 272.0
+texture = ExtResource("3_vlnvi")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="MainMenu_Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_55fnj")
+volume_db = -5.0
+
+[node name="Click_Sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_cb6mm")
+volume_db = 5.0
+
+[node name="Select_Sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_m2gm0")
+volume_db = -10.0
+
+[connection signal="mouse_entered" from="CenterContainer/MainButtons/Start" to="." method="_on_start_mouse_entered"]
+[connection signal="pressed" from="CenterContainer/MainButtons/Start" to="." method="_on_start_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/MainButtons/Settings" to="." method="_on_settings_mouse_entered"]
+[connection signal="pressed" from="CenterContainer/MainButtons/Settings" to="." method="_on_settings_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/MainButtons/Credits" to="." method="_on_credits_mouse_entered"]
+[connection signal="pressed" from="CenterContainer/MainButtons/Credits" to="." method="_on_credits_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/MainButtons/Quit" to="." method="_on_quit_mouse_entered"]
+[connection signal="pressed" from="CenterContainer/MainButtons/Quit" to="." method="_on_quit_pressed"]
+[connection signal="mouse_entered" from="SettingMenuButtons/Return" to="." method="_on_return_mouse_entered"]
+[connection signal="pressed" from="SettingMenuButtons/Return" to="." method="_on_return_pressed"]
+[connection signal="mouse_entered" from="SettingMenuButtons/Fullscreen" to="." method="_on_fullscreen_mouse_entered"]
+[connection signal="pressed" from="SettingMenuButtons/Fullscreen" to="." method="_on_fullscreen_pressed"]
+[connection signal="toggled" from="SettingMenuButtons/Fullscreen" to="." method="_on_fullscreen_toggled"]
+[connection signal="value_changed" from="SettingMenuVolumeBar/VSlider" to="." method="_on_v_slider_value_changed"]
+[connection signal="mouse_entered" from="CreditsMenu1/More" to="." method="_on_more_mouse_entered"]
+[connection signal="pressed" from="CreditsMenu1/More" to="." method="_on_more_pressed"]
+[connection signal="mouse_entered" from="CreditsMenu1/Return" to="." method="_on_return_mouse_entered"]
+[connection signal="pressed" from="CreditsMenu1/Return" to="." method="_on_return_pressed"]
+[connection signal="mouse_entered" from="CreditsMenu2/Back" to="." method="_on_back_mouse_entered"]
+[connection signal="pressed" from="CreditsMenu2/Back" to="." method="_on_back_pressed"]
+[connection signal="mouse_entered" from="CreditsMenu2/Return" to="." method="_on_return_mouse_entered"]
+[connection signal="pressed" from="CreditsMenu2/Return" to="." method="_on_return_pressed"]
+[connection signal="animation_finished" from="Transition" to="." method="_on_transition_animation_finished"]

@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://ccqefuks44jn8"]
+
+[ext_resource type="Shader" path="res://Scene/DASH/dash_effect_Shader.gdshader" id="1_arcpo"]
+[ext_resource type="Texture2D" uid="uid://c61g6xtk2y4vv" path="res://assests/CharacterAssets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_Dash.png" id="2_5qpwm"]
+[ext_resource type="Script" path="res://Script/Player/DashEffect.gd" id="3_d0qep"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fmf8w"]
+shader = ExtResource("1_arcpo")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2fao2"]
+atlas = ExtResource("2_5qpwm")
+region = Rect2(0, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7wo2c"]
+atlas = ExtResource("2_5qpwm")
+region = Rect2(120, 0, 120, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eop06"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2fao2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7wo2c")
+}],
+"loop": true,
+"name": &"Dash_Effect",
+"speed": 5.0
+}]
+
+[node name="DashEffect" type="Node2D"]
+
+[node name="DashEffectSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = -1
+material = SubResource("ShaderMaterial_fmf8w")
+sprite_frames = SubResource("SpriteFrames_eop06")
+animation = &"Dash_Effect"
+frame = 1
+frame_progress = 0.0107006
+offset = Vector2(4, -18)
+script = ExtResource("3_d0qep")
+
+[node name="DashEffectGoneTimer" type="Timer" parent="DashEffectSprite2D"]
+wait_time = 0.3
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
+
+[connection signal="timeout" from="DashEffectSprite2D/DashEffectGoneTimer" to="DashEffectSprite2D" method="_on_dash_effect_gone_timer_timeout"]

@@ -1,0 +1,79 @@
+[gd_scene load_steps=13 format=3 uid="uid://beieoywvmhh01"]
+
+[ext_resource type="Texture2D" uid="uid://b2w2vr5qs4qj" path="res://assests/CharacterAssets/Projectile/FB001.png" id="1_owcpj"]
+[ext_resource type="Script" path="res://Script/Enemy/fireball.gd" id="1_udc8o"]
+[ext_resource type="Texture2D" uid="uid://ccf0fd53kutlg" path="res://assests/CharacterAssets/Projectile/FB004.png" id="2_q5n8v"]
+[ext_resource type="Texture2D" uid="uid://dutf8l1qhfkx" path="res://assests/CharacterAssets/Projectile/FB003.png" id="3_kr7p6"]
+[ext_resource type="Texture2D" uid="uid://dh46wsn5g500p" path="res://assests/CharacterAssets/Projectile/FB002.png" id="4_0dhy6"]
+[ext_resource type="Texture2D" uid="uid://djgai7kkcyyu3" path="res://assests/CharacterAssets/Projectile/FB005.png" id="5_7xxvc"]
+[ext_resource type="AudioStream" uid="uid://c6opw1ttjbw6e" path="res://assests/SoundAssets/sfx/PlayerSfx/Nine Sols Accurate Parry Sound Effect.wav" id="7_r7gdl"]
+[ext_resource type="AudioStream" uid="uid://bdn0gtbosk0e8" path="res://assests/SoundAssets/sfx/EnemySfx/parry-ultrakill.mp3" id="8_44s3f"]
+[ext_resource type="AudioStream" uid="uid://dll1wxey8f37q" path="res://assests/SoundAssets/sfx/EnemySfx/fire-1.wav" id="8_dn1f5"]
+
+[sub_resource type="Animation" id="Animation_la0b2"]
+resource_name = "Fireball"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_owcpj"), ExtResource("2_q5n8v"), ExtResource("3_kr7p6"), ExtResource("4_0dhy6"), ExtResource("5_7xxvc")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u6w77"]
+_data = {
+"Fireball": SubResource("Animation_la0b2")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_52jgj"]
+radius = 9.0
+
+[node name="Fireball" type="Area2D" groups=["Fireball_Area2D"]]
+collision_mask = 6
+script = ExtResource("1_udc8o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("5_7xxvc")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_u6w77")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Fireball_hitbox"]]
+position = Vector2(12, -2)
+shape = SubResource("CircleShape2D_52jgj")
+debug_color = Color(0.97729, 0.10152, 0.284787, 0.42)
+
+[node name="parry_sfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_r7gdl")
+volume_db = 10.0
+pitch_scale = 1.5
+
+[node name="enemy_parry_sfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_44s3f")
+volume_db = 10.0
+
+[node name="fire_sfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_dn1f5")
+volume_db = 15.0
+pitch_scale = 1.5
+max_distance = 400.0
+
+[node name="Freeze_Timer" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="Flash_Timer" type="Timer" parent="."]
+wait_time = 0.1
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="finished" from="fire_sfx" to="." method="_on_fire_sfx_finished"]
+[connection signal="timeout" from="Freeze_Timer" to="." method="_on_freeze_timer_timeout"]
+[connection signal="timeout" from="Flash_Timer" to="." method="_on_flash_timer_timeout"]

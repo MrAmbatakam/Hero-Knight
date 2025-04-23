@@ -1,0 +1,85 @@
+[gd_scene load_steps=6 format=3 uid="uid://dcjwtx5qxlxll"]
+
+[ext_resource type="FontFile" uid="uid://d3rbbr6ogxp1i" path="res://assests/CharacterAssets/Fonts/DungeonFont.ttf" id="1_6jx2m"]
+[ext_resource type="Script" path="res://Script/UI Script/game_over.gd" id="1_s4x5v"]
+[ext_resource type="FontFile" uid="uid://cqv0nebu63pr5" path="res://assests/CharacterAssets/Fonts/m6x11plus.ttf" id="2_7uekd"]
+[ext_resource type="Texture2D" uid="uid://23v461flxbnv" path="res://assests/CharacterAssets/Health/hearts/heartDisplay.png" id="3_yx5ru"]
+[ext_resource type="AudioStream" uid="uid://dg7dgkpbo1g67" path="res://assests/SoundAssets/sfx/UISfx/KL Peach Game Over 2.mp3" id="5_7u7m8"]
+
+[node name="GameOver" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s4x5v")
+
+[node name="Title" type="Label" parent="."]
+custom_minimum_size = Vector2(1080, 250)
+offset_right = 1080.0
+offset_bottom = 250.0
+theme_override_fonts/font = ExtResource("1_6jx2m")
+theme_override_font_sizes/font_size = 160
+text = "Game Over"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RetryPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 344.0
+offset_right = 448.0
+offset_bottom = 464.0
+
+[node name="Retry" type="Button" parent="RetryPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_7uekd")
+theme_override_font_sizes/font_size = 60
+text = "Retry"
+
+[node name="LeavePanel2" type="Panel" parent="."]
+offset_left = 640.0
+offset_top = 344.0
+offset_right = 960.0
+offset_bottom = 464.0
+
+[node name="Leave" type="Button" parent="LeavePanel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_7uekd")
+theme_override_font_sizes/font_size = 60
+text = "Leave"
+
+[node name="Background" type="ColorRect" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(552, 264)
+texture = ExtResource("3_yx5ru")
+hframes = 3
+frame = 2
+
+[node name="GameOverMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_7u7m8")
+
+[connection signal="pressed" from="RetryPanel/Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="LeavePanel2/Leave" to="." method="_on_leave_pressed"]

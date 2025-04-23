@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ovpm76goidge"]
+
+[ext_resource type="Texture2D" uid="uid://c7r2eseeyrsof" path="res://assests/CharacterAssets/Adventurer-1.5/Individual Sprites/adventurer-crnr-jmp-00.png" id="1_v7wj8"]
+
+[node name="DashFlash" type="Node2D"]
+
+[node name="PlayerFlash" type="Sprite2D" parent="."]
+modulate = Color(100, 100, 100, 1)
+texture = ExtResource("1_v7wj8")

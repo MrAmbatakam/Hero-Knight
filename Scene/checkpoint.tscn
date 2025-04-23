@@ -1,0 +1,60 @@
+[gd_scene load_steps=10 format=3 uid="uid://c0ycfcjclicvk"]
+
+[ext_resource type="Script" path="res://Script/Bonfire.gd" id="1_j04xb"]
+[ext_resource type="Texture2D" uid="uid://c6rae8p2h1xmj" path="res://assests/Map_Assets/Checkpoint/Bonvicio_Bonfire_1-0/Bonfire_1.png" id="2_bleb5"]
+[ext_resource type="Texture2D" uid="uid://ccpvx84uvtghu" path="res://assests/Map_Assets/Checkpoint/Bonvicio_Bonfire_1-0/Bonfire_2.png" id="3_oqk0r"]
+[ext_resource type="Texture2D" uid="uid://dhyutetvl4o3o" path="res://assests/Map_Assets/Checkpoint/Bonvicio_Bonfire_1-0/Bonfire_3.png" id="4_g8ve8"]
+[ext_resource type="Texture2D" uid="uid://ddek2fmjnlhwo" path="res://assests/Map_Assets/Checkpoint/Bonvicio_Bonfire_1-0/Bonfire_4.png" id="5_l7ks1"]
+[ext_resource type="AudioStream" uid="uid://d2cqr4jyce3bj" path="res://assests/SoundAssets/sfx/UISfx/spell1_0.wav" id="6_yh07m"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qfgbm"]
+radius = 8.0
+height = 20.0
+
+[sub_resource type="Animation" id="Animation_lu50a"]
+resource_name = "Bonfire"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_bleb5"), ExtResource("3_oqk0r"), ExtResource("4_g8ve8"), ExtResource("5_l7ks1")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b5ihj"]
+_data = {
+"Bonfire": SubResource("Animation_lu50a")
+}
+
+[node name="Checkpoint" type="Area2D"]
+collision_layer = 0
+collision_mask = 8
+script = ExtResource("1_j04xb")
+
+[node name="Checkpoint_Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_bleb5")
+offset = Vector2(0, -10)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_qfgbm")
+
+[node name="Checkpoint_Animation" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Checkpoint_Sprite")
+libraries = {
+"": SubResource("AnimationLibrary_b5ihj")
+}
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Bonfire_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_yh07m")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dg7dgkpbo1g67"
+path="res://.godot/imported/KL Peach Game Over 2.mp3-f8428c45ad4bc51cc60a7eb225a83c1e.mp3str"
+
+[deps]
+
+source_file="res://assests/SoundAssets/sfx/UISfx/KL Peach Game Over 2.mp3"
+dest_files=["res://.godot/imported/KL Peach Game Over 2.mp3-f8428c45ad4bc51cc60a7eb225a83c1e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c6opw1ttjbw6e"
+path="res://.godot/imported/Nine Sols Accurate Parry Sound Effect.wav-e5a4ecc5a8830ba48d5bdb6d7b196617.sample"
+
+[deps]
+
+source_file="res://assests/SoundAssets/sfx/PlayerSfx/Nine Sols Accurate Parry Sound Effect.wav"
+dest_files=["res://.godot/imported/Nine Sols Accurate Parry Sound Effect.wav-e5a4ecc5a8830ba48d5bdb6d7b196617.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

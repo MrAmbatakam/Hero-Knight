@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwfqji2gt5vi3"]
+
+[ext_resource type="Script" path="res://VoidArea.gd" id="1_a8l7c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j7bw3"]
+size = Vector2(130, 20)
+
+[node name="VoidArea" type="Area2D"]
+collision_layer = 4
+script = ExtResource("1_a8l7c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_j7bw3")
+debug_color = Color(0, 0.0325286, 0.0454713, 0.42)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

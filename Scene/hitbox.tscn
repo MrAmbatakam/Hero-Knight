@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dajvbk3dbj14l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1sg55"]
+
+[node name="Hitbox" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1sg55")
+debug_color = Color(0, 0, 0.701961, 0.419608)
