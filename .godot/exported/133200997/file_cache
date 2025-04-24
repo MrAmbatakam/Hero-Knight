@@ -1,0 +1,22 @@
+res://Scene/DASH/dash_effect.tscn::05fa88dcdc905dc688f3a7ad6abf6f2b::1745352367::res://.godot/exported/133200997/export-9905625535061c18d25f8f8494983318-dash_effect.scn
+res://Scene/DASH/dash_flash.tscn::a18e4b5861794f1078d8b1cb58201169::1744811844::res://.godot/exported/133200997/export-70736d3c02bae4763fd90427d7635841-dash_flash.scn
+res://Scene/Levels/intro.tscn::62e6e2cdbd93818051a9437a8b33d5fc::1745458341::res://.godot/exported/133200997/export-db4f2225ac4f2c95b67bf75f45a56521-intro.scn
+res://Scene/Levels/main_menu.tscn::5d9ea143acd75773cbee2a796ce62cab::1745458341::res://.godot/exported/133200997/export-08136ee9d7915f461fc6397a62d8b1d0-main_menu.scn
+res://Scene/Levels/tutorial.tscn::7a659e8f1cc6ed93a425f38bec6d5483::1745500493::res://.godot/exported/133200997/export-ee73ae2e6a6109588c2ce9775bd5af32-tutorial.scn
+res://Scene/Traps Scene/arrow.tscn::16678a6072687959ee4793adf313d0ad::1745500495::res://.godot/exported/133200997/export-b00f81c7c7b85ce2eda680dacc855ba6-arrow.scn
+res://Scene/Traps Scene/arrow_trap.tscn::5471171913a0b31e8bb6adc1415ef621::1745500495::res://.godot/exported/133200997/export-6ee4caea3a89723b74bd475894091724-arrow_trap.scn
+res://Scene/Traps Scene/ceiling_trap.tscn::425bb470bd8b1d865e8e18de9f7394a7::1745467423::res://.godot/exported/133200997/export-c929401f7af5f5e6b7dcaa5f3999a204-ceiling_trap.scn
+res://Scene/Traps Scene/fire_trap.tscn::6a63672dc2e2ab6523cac0495871ea9c::1745500495::res://.godot/exported/133200997/export-09c8d6e57f85692559b822c8cea1cd5b-fire_trap.scn
+res://Scene/Traps Scene/moving_saw.tscn::7e3598bae12cdbcfe2292d046fe7b2a3::1745467424::res://.godot/exported/133200997/export-3c6b5e399d0c064b505854d7452c0070-moving_saw.scn
+res://Scene/UI Scene/game_over.tscn::837c7b3f218de16942f59c02d7810ceb::1745494726::res://.godot/exported/133200997/export-a97be65782a3eddc36d88632dee695c6-game_over.scn
+res://Scene/UI Scene/pause_menu.tscn::dad4bb7cc1c0ff86cb8d7e3563f14332::1745497239::res://.godot/exported/133200997/export-5486c81449598fc0fa0ee8227f702095-pause_menu.scn
+res://Scene/UI Scene/thank_you_for_playing.tscn::5ec1ec5bc49c0050d16ecaa613196cdd::1745497239::res://.godot/exported/133200997/export-460d2cf34f128ee8bc99de0f7d812098-thank_you_for_playing.scn
+res://Scene/checkpoint.tscn::b2fa5a6b70e4aca9570f37f42b65aaf2::1745352367::res://.godot/exported/133200997/export-48fd1887e38146d751bb657e2cf802a5-checkpoint.scn
+res://Scene/EnemyScene.tscn::930819260e3e43a8658d190efa0d9009::1745500495::res://.godot/exported/133200997/export-b981e554beab686045900c5f807d6614-EnemyScene.scn
+res://Scene/fireball.tscn::32e0c5953f21eb813bdfac33961b0196::1745500495::res://.godot/exported/133200997/export-1233b7b67c4904776028e0e3cd30c124-fireball.scn
+res://Scene/hitbox.tscn::3d7129318d5ab06dd1824ef1f0f50fc7::1741687298::res://.godot/exported/133200997/export-9fbcb95adf4e3323db20ce56715553f0-hitbox.scn
+res://Scene/player.tscn::f2f1cc2e6651058a06b3b9209decc254::1745500495::res://.godot/exported/133200997/export-338e31791d3fabafa55f665a3bef2a04-player.scn
+res://Scene/range_enemy.tscn::861d4817eccd680549c7af6cf108d10d::1745494724::res://.godot/exported/133200997/export-c8097a8376d42d5a0bcc75286ca5278e-range_enemy.scn
+res://Scene/void_area.tscn::5128a5c362a84b106801a72b2085841d::1745021929::res://.godot/exported/133200997/export-8d04079895785af279dda41abd223340-void_area.scn
+res://Scene/world.tscn::80e79a2f3fee78c1576c3f710f468eba::1745500495::res://.godot/exported/133200997/export-eac98e4ec5f4c28c823f1cffc3dc4858-world.scn
+res://default_bus_layout.tres::3e10f218af566636924df7657c2c5735::1745113646::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
