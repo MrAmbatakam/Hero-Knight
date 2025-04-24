@@ -9,3 +9,5 @@ res://tutorial.gd
 res://Scene/Levels/main_menu.tscn
 res://Script/Traps Script/ceiling_trap.gd
 res://Scene/Traps Scene/ceiling_trap.tscn
+res://Script/Traps Script/fire_trap.gd
+res://Scene/Traps Scene/fire_trap.tscn

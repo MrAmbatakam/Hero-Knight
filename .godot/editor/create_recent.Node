@@ -1,8 +1,9 @@
+Timer
 Node
-TextureRect
 CollisionShape2D
 Area2D
 AnimationPlayer
 Sprite2D
+TextureRect
 AudioStreamPlayer2D
 AudioStreamPlayer
