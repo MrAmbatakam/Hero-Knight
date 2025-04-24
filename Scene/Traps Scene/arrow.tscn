@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c46htbnkytp31"]
+
+[ext_resource type="Texture2D" uid="uid://b2xc1y6i7d4fp" path="res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/PNGs/Arrow.png" id="1_70uyc"]
+[ext_resource type="Script" path="res://Script/Traps Script/arrow.gd" id="1_ognu6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gf61o"]
+size = Vector2(12, 4)
+
+[node name="Arrow" type="CharacterBody2D"]
+position = Vector2(596, 335)
+script = ExtResource("1_ognu6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_70uyc")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-8, 0)
+shape = SubResource("RectangleShape2D_gf61o")
+debug_color = Color(0.985475, 0.0981653, 0.16573, 0.42)

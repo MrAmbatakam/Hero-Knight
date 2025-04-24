@@ -1,9 +1,10 @@
-Timer
-Node
-CollisionShape2D
 Area2D
-AnimationPlayer
+CollisionShape2D
 Sprite2D
+CharacterBody2D
+AnimationPlayer
+Node
+Timer
 TextureRect
 AudioStreamPlayer2D
 AudioStreamPlayer

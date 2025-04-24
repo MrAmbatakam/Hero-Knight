@@ -11,3 +11,9 @@ res://Script/Traps Script/ceiling_trap.gd
 res://Scene/Traps Scene/ceiling_trap.tscn
 res://Script/Traps Script/fire_trap.gd
 res://Scene/Traps Scene/fire_trap.tscn
+res://Scene/Traps Scene/moving_saw.tscn
+res://Script/Traps Script/moving_saw.gd
+res://Scene/Traps Scene/arrow.tscn
+res://Script/Traps Script/arrow.gd
+res://Scene/Traps Scene/arrow_trap.tscn
+res://Script/Traps Script/arrow_trap.gd
