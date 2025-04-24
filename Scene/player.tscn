@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://b8ycxj1kuxt6e"]
+[gd_scene load_steps=62 format=3 uid="uid://b8ycxj1kuxt6e"]
 
 [ext_resource type="Script" path="res://Script/Player/player.gd" id="1_6y618"]
 [ext_resource type="Texture2D" uid="uid://ciq2clr7q7qy4" path="res://assests/CharacterAssets/Adventurer-1.5/adventurer-v1.5-Sheet.png" id="1_56ytb"]
@@ -171,6 +171,45 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_glxfk"]
+resource_name = "Death"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("10_ix1pd")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 }
 
 [sub_resource type="Animation" id="Animation_ovg2n"]
@@ -475,45 +514,6 @@ tracks/2/keys = {
 "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 }
 
-[sub_resource type="Animation" id="Animation_glxfk"]
-resource_name = "Death"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("10_ix1pd")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Sprite2D:hframes")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [10]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Sprite2D:frame")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_py4g4"]
 _data = {
 "Attack1": SubResource("Animation_rtjde"),
@@ -727,6 +727,96 @@ size = Vector2(16, 24)
 [sub_resource type="CircleShape2D" id="CircleShape2D_tr3mb"]
 radius = 37.0614
 
+[sub_resource type="Animation" id="Animation_xresg"]
+resource_name = "Fade_In"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_mru2m"]
+resource_name = "Fade_Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_bonup"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gi8r7"]
+_data = {
+"Fade_In": SubResource("Animation_xresg"),
+"Fade_Out": SubResource("Animation_mru2m"),
+"RESET": SubResource("Animation_bonup")
+}
+
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 collision_layer = 9
 collision_mask = 3
@@ -852,24 +942,39 @@ debug_color = Color(0.0376385, 0.642818, 0.294491, 0.42)
 
 [node name="UI" type="CanvasLayer" parent="."]
 
-[node name="Heart" type="Panel" parent="UI"]
-offset_right = 160.0
-offset_bottom = 33.0
-
-[node name="Sprite2D" type="TextureRect" parent="UI/Heart"]
+[node name="Hearts" type="TextureRect" parent="UI"]
 custom_minimum_size = Vector2(16, 0)
-layout_mode = 0
 offset_right = 80.0
 offset_bottom = 16.0
 scale = Vector2(2, 2)
 texture = ExtResource("13_ftqdk")
 stretch_mode = 1
 
+[node name="Heart" type="Panel" parent="UI"]
+visible = false
+offset_right = 160.0
+offset_bottom = 33.0
+
 [node name="PauseMenu" parent="UI" instance=ExtResource("19_0m31p")]
 visible = false
 
 [node name="GameOver" parent="UI" instance=ExtResource("19_t8m6q")]
 visible = false
+
+[node name="Transition" type="AnimationPlayer" parent="UI"]
+libraries = {
+"": SubResource("AnimationLibrary_gi8r7")
+}
+
+[node name="TransitionBackground" type="ColorRect" parent="UI/Transition"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
@@ -883,3 +988,4 @@ visible = false
 [connection signal="timeout" from="Timer/Air_AttackTimer" to="." method="_on_air_attack_timer_timeout"]
 [connection signal="area_entered" from="Player_hitbox" to="." method="_on_player_hitbox_area_entered"]
 [connection signal="area_entered" from="Player_DeflectBox" to="." method="_on_player_deflect_box_area_entered"]
+[connection signal="animation_finished" from="UI/Transition" to="." method="_on_transition_animation_finished"]

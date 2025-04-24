@@ -1,10 +1,102 @@
-[gd_scene load_steps=6 format=3 uid="uid://dcjwtx5qxlxll"]
+[gd_scene load_steps=12 format=3 uid="uid://dcjwtx5qxlxll"]
 
 [ext_resource type="FontFile" uid="uid://d3rbbr6ogxp1i" path="res://assests/CharacterAssets/Fonts/DungeonFont.ttf" id="1_6jx2m"]
 [ext_resource type="Script" path="res://Script/UI Script/game_over.gd" id="1_s4x5v"]
 [ext_resource type="FontFile" uid="uid://cqv0nebu63pr5" path="res://assests/CharacterAssets/Fonts/m6x11plus.ttf" id="2_7uekd"]
 [ext_resource type="Texture2D" uid="uid://23v461flxbnv" path="res://assests/CharacterAssets/Health/hearts/heartDisplay.png" id="3_yx5ru"]
-[ext_resource type="AudioStream" uid="uid://dg7dgkpbo1g67" path="res://assests/SoundAssets/sfx/UISfx/KL Peach Game Over 2.mp3" id="5_7u7m8"]
+[ext_resource type="AudioStream" uid="uid://cn8imnemstrt1" path="res://assests/SoundAssets/sfx/UISfx/dark-souls-you-died-sound-effect_hm5sYFG.mp3" id="5_y1v7u"]
+[ext_resource type="AudioStream" uid="uid://dn2go0ve78lve" path="res://assests/SoundAssets/sfx/UISfx/Click_Sfx.mp3" id="6_fl5d1"]
+[ext_resource type="AudioStream" uid="uid://c6n4kyp7nnfnc" path="res://assests/SoundAssets/sfx/UISfx/Select_Sfx.mp3" id="7_fcc75"]
+
+[sub_resource type="Animation" id="Animation_xresg"]
+resource_name = "Fade_In"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_mru2m"]
+resource_name = "Fade_Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_bonup"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/TransitionBackground:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/TransitionBackground:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gi8r7"]
+_data = {
+"Fade_In": SubResource("Animation_xresg"),
+"Fade_Out": SubResource("Animation_mru2m"),
+"RESET": SubResource("Animation_bonup")
+}
 
 [node name="GameOver" type="Control"]
 process_mode = 3
@@ -18,6 +110,7 @@ script = ExtResource("1_s4x5v")
 
 [node name="Title" type="Label" parent="."]
 custom_minimum_size = Vector2(1080, 250)
+layout_mode = 0
 offset_right = 1080.0
 offset_bottom = 250.0
 theme_override_fonts/font = ExtResource("1_6jx2m")
@@ -45,6 +138,7 @@ theme_override_font_sizes/font_size = 60
 text = "Retry"
 
 [node name="LeavePanel2" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 640.0
 offset_top = 344.0
 offset_right = 960.0
@@ -72,6 +166,21 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
+[node name="Transition" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gi8r7")
+}
+
+[node name="TransitionBackground" type="ColorRect" parent="Transition"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(552, 264)
 texture = ExtResource("3_yx5ru")
@@ -79,7 +188,19 @@ hframes = 3
 frame = 2
 
 [node name="GameOverMusic" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_7u7m8")
+stream = ExtResource("5_y1v7u")
 
+[node name="Click_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_fl5d1")
+volume_db = 5.0
+
+[node name="Select_sfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_fcc75")
+volume_db = -10.0
+
+[connection signal="mouse_entered" from="RetryPanel/Retry" to="." method="_on_retry_mouse_entered"]
 [connection signal="pressed" from="RetryPanel/Retry" to="." method="_on_retry_pressed"]
+[connection signal="mouse_entered" from="LeavePanel2/Leave" to="." method="_on_leave_mouse_entered"]
 [connection signal="pressed" from="LeavePanel2/Leave" to="." method="_on_leave_pressed"]
+[connection signal="animation_finished" from="Transition" to="." method="_on_transition_animation_finished"]
+[connection signal="finished" from="Click_sfx" to="." method="_on_click_sfx_finished"]

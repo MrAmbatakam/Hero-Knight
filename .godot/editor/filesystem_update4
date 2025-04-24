@@ -1,0 +1,9 @@
+res://Scene/world.tscn
+res://Scene/UI Scene/game_over.tscn
+res://Script/UI Script/game_over.gd
+res://Scene/Levels/tutorial.tscn
+res://Scene/player.tscn
+res://Script/Player/player.gd
+res://Scene/Levels/intro.tscn
+res://tutorial.gd
+res://Scene/Levels/main_menu.tscn

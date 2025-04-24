@@ -2,19 +2,19 @@ ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1745444036
 default_bus_layout.tres::AudioBusLayout::3237085864497574879::1745113646::0::1::::<><>::
 icon.svg::CompressedTexture2D::5461260800071992865::1728645571::1745444056::1::::<><>::
-tutorial.gd::GDScript::-1::1745406042::0::1::::<>Node2D<>::
+tutorial.gd::GDScript::-1::1745451944::0::1::::<>Node2D<>::
 VoidArea.gd::GDScript::-1::1740347780::0::1::::<>Area2D<>::
 ::res://assests/::1745443472
 ::res://assests/CharacterAssets/::1745264458
 Necromancer_creativekind-Sheet.png::CompressedTexture2D::9166188278140680813::1743503404::1745444060::1::::<><>::
-::res://assests/CharacterAssets/Adventurer-1.5/::1745264451
+::res://assests/CharacterAssets/Adventurer-1.5/::1745444066
 adventurer-v1.5-Sheet.png::CompressedTexture2D::5369025696443040589::1728645571::1745444066::1::::<><>::
-::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/::1745264452
+::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/::1745444064
 Comparison2x.png::CompressedTexture2D::2663711411275922372::1729698426::1745444064::1::::<><>::
 ::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/::1745264454
 ::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/NoOutline/::1745264464
 ::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/NoOutline/120x80_gifs/::1745264466
-::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/::1745264466
+::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/::1745444065
 _Attack2.png::CompressedTexture2D::795912403497557973::1729698426::1745444064::1::::<><>::
 _Attack2NoMovement.png::CompressedTexture2D::1300423623089593167::1729698426::1745444065::1::::<><>::
 _Attack.png::CompressedTexture2D::8978590821872750421::1729698426::1745444064::1::::<><>::
@@ -47,7 +47,7 @@ _WallHang.png::CompressedTexture2D::7812550452609111403::1729698426::1745444064:
 _WallSlide.png::CompressedTexture2D::2116819698858988374::1729698426::1745444064::1::::<><>::
 ::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/Outline/::1745264465
 ::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/Outline/120x80_gifs/::1745264466
-::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/::1745264466
+::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/::1745444066
 _Attack2.png::CompressedTexture2D::7932418929442908213::1729698426::1745444064::1::::<><>::
 _Attack2NoMovement.png::CompressedTexture2D::7729350658850253269::1729698426::1745444064::1::::<><>::
 _Attack.png::CompressedTexture2D::2871731796933910053::1729698426::1745444064::1::::<><>::
@@ -81,7 +81,7 @@ _WallSlide.png::CompressedTexture2D::7568551965907224145::1729698426::1745444065
 ::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour2/::1745264454
 ::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour2/NoOutline/::1745264464
 ::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour2/NoOutline/120x80_gifs/::1745264466
-::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/::1745264466
+::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/::1745444065
 _Attack2.png::CompressedTexture2D::6873356319522168149::1729698426::1745444065::1::::<><>::
 _Attack2NoMovement.png::CompressedTexture2D::905673403439050794::1729698426::1745444065::1::::<><>::
 _Attack.png::CompressedTexture2D::5008905428838373758::1729698426::1745444065::1::::<><>::
@@ -114,7 +114,7 @@ _WallHang.png::CompressedTexture2D::523454921146803790::1729698426::1745444063::
 _WallSlide.png::CompressedTexture2D::1506783156237885463::1729698426::1745444063::1::::<><>::
 ::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour2/Outline/::1745264465
 ::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour2/Outline/120x80_gifs/::1745264466
-::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour2/Outline/120x80_PNGSheets/::1745264466
+::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour2/Outline/120x80_PNGSheets/::1745444064
 _Attack2.png::CompressedTexture2D::5881316466026479452::1729698426::1745444064::1::::<><>::
 _Attack2NoMovement.png::CompressedTexture2D::5663142398394716606::1729698426::1745444064::1::::<><>::
 _Attack.png::CompressedTexture2D::4892558365847055955::1729698426::1745444064::1::::<><>::
@@ -145,7 +145,7 @@ _WallClimb.png::CompressedTexture2D::2989049463519847007::1729698426::1745444064
 _WallClimbNoMovement.png::CompressedTexture2D::2362033369521149818::1729698426::1745444064::1::::<><>::
 _WallHang.png::CompressedTexture2D::1801362734951418264::1729698426::1745444064::1::::<><>::
 _WallSlide.png::CompressedTexture2D::5613398688780711517::1729698426::1745444064::1::::<><>::
-::res://assests/CharacterAssets/Adventurer-1.5/Individual Sprites/::1745264452
+::res://assests/CharacterAssets/Adventurer-1.5/Individual Sprites/::1745444068
 adventurer-air-attack1-00.png::CompressedTexture2D::321145845011566701::1728645571::1745444064::1::::<><>::
 adventurer-air-attack1-01.png::CompressedTexture2D::3175686649142507416::1728645571::1745444064::1::::<><>::
 adventurer-air-attack1-02.png::CompressedTexture2D::6498960347402930636::1728645571::1745444064::1::::<><>::
@@ -255,10 +255,10 @@ adventurer-swrd-shte-02.png::CompressedTexture2D::4658446193840520547::172864557
 adventurer-swrd-shte-03.png::CompressedTexture2D::819576972253481384::1728645571::1745444068::1::::<><>::
 adventurer-wall-slide-00.png::CompressedTexture2D::4894449309434578321::1728645571::1745444066::1::::<><>::
 adventurer-wall-slide-01.png::CompressedTexture2D::6815228505964473156::1728645571::1745444066::1::::<><>::
-::res://assests/CharacterAssets/Bubbles/::1745264451
+::res://assests/CharacterAssets/Bubbles/::1745444052
 bubbles.svg::CompressedTexture2D::6645577006683123502::1744984506::1745444052::1::::<><>::
 ::res://assests/CharacterAssets/Bubbles/Coloured/::1745264463
-::res://assests/CharacterAssets/Bubbles/Coloured/16x16/::1745264463
+::res://assests/CharacterAssets/Bubbles/Coloured/16x16/::1745444066
 bubble_1.png::CompressedTexture2D::3131437556171960619::1744984505::1745444066::1::::<><>::
 bubble_2.png::CompressedTexture2D::3047567889202710038::1744984505::1745444066::1::::<><>::
 bubble_3.png::CompressedTexture2D::4038635127850868258::1744984505::1745444066::1::::<><>::
@@ -266,7 +266,7 @@ bubble_4.png::CompressedTexture2D::1381155855317148518::1744984505::1745444066::
 bubble_5.png::CompressedTexture2D::9143781025001021196::1744984505::1745444066::1::::<><>::
 bubble_6.png::CompressedTexture2D::2050794582818259359::1744984505::1745444066::1::::<><>::
 bubble_7.png::CompressedTexture2D::3394081721576929535::1744984505::1745444066::1::::<><>::
-::res://assests/CharacterAssets/Bubbles/Coloured/32x32/::1745264463
+::res://assests/CharacterAssets/Bubbles/Coloured/32x32/::1745444066
 bubble_1.png::CompressedTexture2D::7483948460607091144::1744984505::1745444066::1::::<><>::
 bubble_2.png::CompressedTexture2D::2680069435417611594::1744984505::1745444066::1::::<><>::
 bubble_3.png::CompressedTexture2D::1198123435592501145::1744984505::1745444066::1::::<><>::
@@ -274,7 +274,7 @@ bubble_4.png::CompressedTexture2D::4374674504304487044::1744984505::1745444066::
 bubble_5.png::CompressedTexture2D::39679722259948331::1744984505::1745444066::1::::<><>::
 bubble_6.png::CompressedTexture2D::8264106891149680909::1744984505::1745444066::1::::<><>::
 bubble_7.png::CompressedTexture2D::2052012922831569617::1744984505::1745444066::1::::<><>::
-::res://assests/CharacterAssets/Bubbles/Coloured/64x64/::1745264463
+::res://assests/CharacterAssets/Bubbles/Coloured/64x64/::1745444066
 bubble_1.png::CompressedTexture2D::3438826087280580955::1744984505::1745444066::1::::<><>::
 bubble_2.png::CompressedTexture2D::6501589282344349816::1744984505::1745444066::1::::<><>::
 bubble_3.png::CompressedTexture2D::7327343183911947064::1744984505::1745444066::1::::<><>::
@@ -282,7 +282,7 @@ bubble_4.png::CompressedTexture2D::8934021650748020521::1744984505::1745444066::
 bubble_5.png::CompressedTexture2D::8397816850803128897::1744984505::1745444066::1::::<><>::
 bubble_6.png::CompressedTexture2D::7542378445037630881::1744984505::1745444066::1::::<><>::
 bubble_7.png::CompressedTexture2D::4458476959073979249::1744984505::1745444066::1::::<><>::
-::res://assests/CharacterAssets/Bubbles/Coloured/128x128/::1745264463
+::res://assests/CharacterAssets/Bubbles/Coloured/128x128/::1745444066
 bubble_1.png::CompressedTexture2D::4938959909553231980::1744984505::1745444066::1::::<><>::
 bubble_2.png::CompressedTexture2D::5751107346175546883::1744984505::1745444066::1::::<><>::
 bubble_3.png::CompressedTexture2D::8000589601362099900::1744984505::1745444066::1::::<><>::
@@ -290,7 +290,7 @@ bubble_4.png::CompressedTexture2D::4899571977650260296::1744984505::1745444066::
 bubble_5.png::CompressedTexture2D::4118028679669088001::1744984505::1745444066::1::::<><>::
 bubble_6.png::CompressedTexture2D::4003108166439876835::1744984505::1745444066::1::::<><>::
 bubble_7.png::CompressedTexture2D::8102017324736548538::1744984505::1745444066::1::::<><>::
-::res://assests/CharacterAssets/Bubbles/Coloured/256x256/::1745264463
+::res://assests/CharacterAssets/Bubbles/Coloured/256x256/::1745444066
 bubble_1.png::CompressedTexture2D::113157987182622606::1744984505::1745444066::1::::<><>::
 bubble_2.png::CompressedTexture2D::2014872256472309456::1744984505::1745444066::1::::<><>::
 bubble_3.png::CompressedTexture2D::8189847039477930846::1744984505::1745444066::1::::<><>::
@@ -298,7 +298,7 @@ bubble_4.png::CompressedTexture2D::7438642412403387487::1744984505::1745444066::
 bubble_5.png::CompressedTexture2D::4871187757370719232::1744984505::1745444066::1::::<><>::
 bubble_6.png::CompressedTexture2D::5743821745240828530::1744984505::1745444066::1::::<><>::
 bubble_7.png::CompressedTexture2D::1483898504006829615::1744984505::1745444066::1::::<><>::
-::res://assests/CharacterAssets/Bubbles/Coloured/512x512/::1745264463
+::res://assests/CharacterAssets/Bubbles/Coloured/512x512/::1745444068
 bubble_1.png::CompressedTexture2D::3946798411168730812::1744984505::1745444067::1::::<><>::
 bubble_2.png::CompressedTexture2D::3857209663751684743::1744984505::1745444067::1::::<><>::
 bubble_3.png::CompressedTexture2D::7060225772809027942::1744984505::1745444067::1::::<><>::
@@ -307,7 +307,7 @@ bubble_5.png::CompressedTexture2D::135683832386610552::1744984505::1745444068::1
 bubble_6.png::CompressedTexture2D::3164728710214480698::1744984505::1745444067::1::::<><>::
 bubble_7.png::CompressedTexture2D::7638181004796452848::1744984505::1745444067::1::::<><>::
 ::res://assests/CharacterAssets/Bubbles/Greyscale/::1745264469
-::res://assests/CharacterAssets/Bubbles/Greyscale/16x16/::1745264463
+::res://assests/CharacterAssets/Bubbles/Greyscale/16x16/::1745444067
 bubble_1.png::CompressedTexture2D::3510121493754520355::1744984505::1745444067::1::::<><>::
 bubble_1_grayscale.png::CompressedTexture2D::8895082147272551544::1744984505::1745444067::1::::<><>::
 bubble_2.png::CompressedTexture2D::5134734041964274131::1744984505::1745444067::1::::<><>::
@@ -322,7 +322,7 @@ bubble_6.png::CompressedTexture2D::3212106735710023299::1744984505::1745444067::
 bubble_6_grayscale.png::CompressedTexture2D::6723375080949267703::1744984505::1745444067::1::::<><>::
 bubble_7.png::CompressedTexture2D::7101769963697752472::1744984505::1745444066::1::::<><>::
 bubble_7_grayscale.png::CompressedTexture2D::5752158094899812185::1744984505::1745444066::1::::<><>::
-::res://assests/CharacterAssets/Bubbles/Greyscale/32x32/::1745264469
+::res://assests/CharacterAssets/Bubbles/Greyscale/32x32/::1745444066
 bubble_1.png::CompressedTexture2D::7019960339275351611::1744984505::1745444066::1::::<><>::
 bubble_1_grayscale.png::CompressedTexture2D::5856365829419044080::1744984505::1745444066::1::::<><>::
 bubble_2.png::CompressedTexture2D::242721919053925624::1744984505::1745444066::1::::<><>::
@@ -337,7 +337,7 @@ bubble_6.png::CompressedTexture2D::8456939092496526562::1744984505::1745444066::
 bubble_6_grayscale.png::CompressedTexture2D::3656730763215068977::1744984505::1745444066::1::::<><>::
 bubble_7.png::CompressedTexture2D::5117261005074944979::1744984505::1745444066::1::::<><>::
 bubble_7_grayscale.png::CompressedTexture2D::1745420966066656027::1744984505::1745444066::1::::<><>::
-::res://assests/CharacterAssets/Bubbles/Greyscale/64x64/::1745264463
+::res://assests/CharacterAssets/Bubbles/Greyscale/64x64/::1745444066
 bubble_1.png::CompressedTexture2D::12454187258369779::1744984505::1745444066::1::::<><>::
 bubble_1_grayscale.png::CompressedTexture2D::396868825909177817::1744984505::1745444066::1::::<><>::
 bubble_2.png::CompressedTexture2D::1795646869081755797::1744984505::1745444066::1::::<><>::
@@ -352,7 +352,7 @@ bubble_6.png::CompressedTexture2D::3551563151229832430::1744984505::1745444051::
 bubble_6_grayscale.png::CompressedTexture2D::3927860840927193741::1744984505::1745444051::1::::<><>::
 bubble_7.png::CompressedTexture2D::2620686127603650589::1744984505::1745444051::1::::<><>::
 bubble_7_grayscale.png::CompressedTexture2D::211758441980658736::1744984505::1745444051::1::::<><>::
-::res://assests/CharacterAssets/Bubbles/Greyscale/128x128/::1745264469
+::res://assests/CharacterAssets/Bubbles/Greyscale/128x128/::1745444051
 bubble_1.png::CompressedTexture2D::5325303478612054462::1744984505::1745444051::1::::<><>::
 bubble_1_grayscale.png::CompressedTexture2D::1308475980586099487::1744984505::1745444051::1::::<><>::
 bubble_2.png::CompressedTexture2D::134240728039788806::1744984505::1745444051::1::::<><>::
@@ -367,7 +367,7 @@ bubble_6.png::CompressedTexture2D::2945593844518262486::1744984505::1745444050::
 bubble_6_grayscale.png::CompressedTexture2D::2887222308478476347::1744984505::1745444050::1::::<><>::
 bubble_7.png::CompressedTexture2D::9100265449126985426::1744984505::1745444050::1::::<><>::
 bubble_7_grayscale.png::CompressedTexture2D::8692544969071802220::1744984505::1745444050::1::::<><>::
-::res://assests/CharacterAssets/Bubbles/Greyscale/256x256/::1745264469
+::res://assests/CharacterAssets/Bubbles/Greyscale/256x256/::1745444052
 bubble_1.png::CompressedTexture2D::2846948041426253120::1744984506::1745444051::1::::<><>::
 bubble_1_grayscale.png::CompressedTexture2D::635052998484769449::1744984505::1745444051::1::::<><>::
 bubble_2.png::CompressedTexture2D::5414186328497823441::1744984506::1745444051::1::::<><>::
@@ -382,7 +382,7 @@ bubble_6.png::CompressedTexture2D::8375631355196360674::1744984506::1745444052::
 bubble_6_grayscale.png::CompressedTexture2D::5919878141908537300::1744984506::1745444052::1::::<><>::
 bubble_7.png::CompressedTexture2D::4285106165188947153::1744984506::1745444052::1::::<><>::
 bubble_7_grayscale.png::CompressedTexture2D::4345897758217317982::1744984506::1745444052::1::::<><>::
-::res://assests/CharacterAssets/Bubbles/Greyscale/512x512/::1745264469
+::res://assests/CharacterAssets/Bubbles/Greyscale/512x512/::1745444054
 bubble_1.png::CompressedTexture2D::4799787372269452433::1744984506::1745444053::1::::<><>::
 bubble_1_grayscale.png::CompressedTexture2D::259814625612460935::1744984506::1745444052::1::::<><>::
 bubble_2.png::CompressedTexture2D::2110654516317770163::1744984506::1745444053::1::::<><>::
@@ -397,16 +397,16 @@ bubble_6.png::CompressedTexture2D::4419101642750085401::1744984506::1745444054::
 bubble_6_grayscale.png::CompressedTexture2D::6752792699497855143::1744984506::1745444053::1::::<><>::
 bubble_7.png::CompressedTexture2D::8318698394861647982::1744984506::1745444054::1::::<><>::
 bubble_7_grayscale.png::CompressedTexture2D::178986956443184816::1744984506::1745444054::1::::<><>::
-::res://assests/CharacterAssets/Fonts/::1745264451
+::res://assests/CharacterAssets/Fonts/::1745444046
 DungeonFont.ttf::FontFile::9159707538980822992::1745060061::1745444046::1::::<><>::
 m5x7.ttf::FontFile::707418100825910354::1745060814::1745444046::1::::<><>::
 m6x11plus.ttf::FontFile::5940756151159359148::1745062703::1745444046::1::::<><>::
-::res://assests/CharacterAssets/FreeKnight_v1/::1745264451
+::res://assests/CharacterAssets/FreeKnight_v1/::1745444057
 Comparison2x.png::CompressedTexture2D::5649064855759975127::1729696365::1745444057::1::::<><>::
 ::res://assests/CharacterAssets/FreeKnight_v1/Colour1/::1745264463
 ::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/::1745264463
 ::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_gifs/::1745264465
-::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/::1745264465
+::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/::1745444052
 _Attack2.png::CompressedTexture2D::1397483673776355340::1729696365::1745444051::1::::<><>::
 _Attack2NoMovement.png::CompressedTexture2D::2395563629916152762::1729696365::1745444051::1::::<><>::
 _Attack.png::CompressedTexture2D::42706747815413694::1729696365::1745444051::1::::<><>::
@@ -439,7 +439,7 @@ _WallHang.png::CompressedTexture2D::884084667135891619::1729696365::1745444048::
 _WallSlide.png::CompressedTexture2D::573440595514553555::1729696365::1745444048::1::::<><>::
 ::res://assests/CharacterAssets/FreeKnight_v1/Colour1/Outline/::1745264495
 ::res://assests/CharacterAssets/FreeKnight_v1/Colour1/Outline/120x80_gifs/::1745264497
-::res://assests/CharacterAssets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/::1745264497
+::res://assests/CharacterAssets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/::1745444049
 _Attack2.png::CompressedTexture2D::7486629734359329168::1729696365::1745444048::1::::<><>::
 _Attack2NoMovement.png::CompressedTexture2D::87009433157981610::1729696365::1745444048::1::::<><>::
 _Attack.png::CompressedTexture2D::2049000076754886813::1729696365::1745444048::1::::<><>::
@@ -473,7 +473,7 @@ _WallSlide.png::CompressedTexture2D::6387000805753925239::1729696365::1745444049
 ::res://assests/CharacterAssets/FreeKnight_v1/Colour2/::1745264468
 ::res://assests/CharacterAssets/FreeKnight_v1/Colour2/NoOutline/::1745264495
 ::res://assests/CharacterAssets/FreeKnight_v1/Colour2/NoOutline/120x80_gifs/::1745264497
-::res://assests/CharacterAssets/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/::1745264497
+::res://assests/CharacterAssets/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/::1745444057
 _Attack2.png::CompressedTexture2D::9097758078936634365::1729696365::1745444049::1::::<><>::
 _Attack2NoMovement.png::CompressedTexture2D::3777833363366124499::1729696365::1745444049::1::::<><>::
 _Attack.png::CompressedTexture2D::8406973239841110831::1729696365::1745444049::1::::<><>::
@@ -506,7 +506,7 @@ _WallHang.png::CompressedTexture2D::3488589325014829190::1729696365::1745444057:
 _WallSlide.png::CompressedTexture2D::3154113348980280396::1729696365::1745444057::1::::<><>::
 ::res://assests/CharacterAssets/FreeKnight_v1/Colour2/Outline/::1745264469
 ::res://assests/CharacterAssets/FreeKnight_v1/Colour2/Outline/120x80_gifs/::1745264469
-::res://assests/CharacterAssets/FreeKnight_v1/Colour2/Outline/120x80_PNGSheets/::1745264469
+::res://assests/CharacterAssets/FreeKnight_v1/Colour2/Outline/120x80_PNGSheets/::1745444058
 _Attack2.png::CompressedTexture2D::3828518585579813310::1729696365::1745444058::1::::<><>::
 _Attack2NoMovement.png::CompressedTexture2D::2912257764978732243::1729696365::1745444058::1::::<><>::
 _Attack.png::CompressedTexture2D::1964636407698773903::1729696365::1745444058::1::::<><>::
@@ -537,14 +537,14 @@ _WallClimb.png::CompressedTexture2D::6694696179357304594::1729696365::1745444057
 _WallClimbNoMovement.png::CompressedTexture2D::2323376555180498568::1729696365::1745444057::1::::<><>::
 _WallHang.png::CompressedTexture2D::7740702690704512337::1729696365::1745444057::1::::<><>::
 _WallSlide.png::CompressedTexture2D::5033624933801230935::1729696365::1745444057::1::::<><>::
-::res://assests/CharacterAssets/Health/::1745264462
+::res://assests/CharacterAssets/Health/::1745444057
 heart_16x16.png::CompressedTexture2D::8368268545229741581::1742568694::1745444057::1::::<><>::
 heart_scaled_to_256x256.png::CompressedTexture2D::5348589177140210340::1742568733::1745444057::1::::<><>::
-::res://assests/CharacterAssets/Health/hearts/::1745264463
+::res://assests/CharacterAssets/Health/hearts/::1745444057
 heartDisplay.png::CompressedTexture2D::1954229868843437531::1741690645::1745444057::1::::<><>::
-::res://assests/CharacterAssets/NightBorne/::1745264463
+::res://assests/CharacterAssets/NightBorne/::1745444059
 NightBorne.png::CompressedTexture2D::6090394420054454384::1728645571::1745444059::1::::<><>::
-::res://assests/CharacterAssets/Projectile/::1745264440
+::res://assests/CharacterAssets/Projectile/::1745444059
 FB001.png::CompressedTexture2D::127312163911154477::1743506052::1745444058::1::::<><>::
 FB002.png::CompressedTexture2D::7712373392529981077::1743506052::1745444058::1::::<><>::
 FB003.png::CompressedTexture2D::253018389293766967::1743506052::1745444059::1::::<><>::
@@ -561,19 +561,19 @@ openart-image_yUdLK_oL_1745162888754_raw.jpg::CompressedTexture2D::3420242112271
 zzz icon.webp::CompressedTexture2D::2618930003439569167::1745354623::1745444062::1::::<><>::
 ::res://assests/Map_Assets/::1745264458
 Tileset__castle__.png::CompressedTexture2D::8698644848612811112::1730378136::1745444056::1::::<><>::
-::res://assests/Map_Assets/Checkpoint/::1745264462
+::res://assests/Map_Assets/Checkpoint/::1745444058
 Dimensional_Portal.png::CompressedTexture2D::6853983977875595306::1745182870::1745444058::1::::<><>::
-::res://assests/Map_Assets/Checkpoint/Bonvicio_Bonfire_1-0/::1745264452
+::res://assests/Map_Assets/Checkpoint/Bonvicio_Bonfire_1-0/::1745444062
 Bonfire_1.png::CompressedTexture2D::6983798842839622493::1745189250::1745444062::1::::<><>::
 Bonfire_2.png::CompressedTexture2D::4945502630088480194::1745189250::1745444062::1::::<><>::
 Bonfire_3.png::CompressedTexture2D::7701377532997171830::1745189250::1745444062::1::::<><>::
 Bonfire_4.png::CompressedTexture2D::7378741760953872350::1745189250::1745444062::1::::<><>::
 Example.png::CompressedTexture2D::2413519637290988244::1745189250::1745444058::1::::<><>::
 ::res://assests/Map_Assets/Checkpoint/Endpoint/::1745264463
-::res://assests/Map_Assets/clouds/::1745264462
+::res://assests/Map_Assets/clouds/::1745444058
 cloud_spritesheet.png::CompressedTexture2D::4090700127539163531::1745197297::1745444058::1::::<><>::
 Licence&Credit.txt::TextFile::-1::1745197297::0::1::::<><>::
-::res://assests/Map_Assets/clouds/cloud_single/::1745264463
+::res://assests/Map_Assets/clouds/cloud_single/::1745444058
 cloud1.png::CompressedTexture2D::8661257608442920546::1745197297::1745444058::1::::<><>::
 cloud2.png::CompressedTexture2D::8218578692604865092::1745197297::1745444058::1::::<><>::
 cloud3.png::CompressedTexture2D::7552238263658548878::1745197297::1745444058::1::::<><>::
@@ -583,7 +583,7 @@ cloud6.png::CompressedTexture2D::519971662808102280::1745197297::1745444058::1::
 cloud7.png::CompressedTexture2D::3164707719909117563::1745197297::1745444058::1::::<><>::
 cloud8.png::CompressedTexture2D::3565571893369965965::1745197297::1745444058::1::::<><>::
 cloud9.png::CompressedTexture2D::1070364787254790345::1745197297::1745444058::1::::<><>::
-::res://assests/Map_Assets/PixelFantasy_Caves_1.0/::1745264462
+::res://assests/Map_Assets/PixelFantasy_Caves_1.0/::1745444059
 background1.png::CompressedTexture2D::1674704788783611744::1730738294::1745444058::1::::<><>::
 background2.png::CompressedTexture2D::4930909120449001525::1730738294::1745444058::1::::<><>::
 background3.png::CompressedTexture2D::8687002348593900785::1730738294::1745444058::1::::<><>::
@@ -598,121 +598,121 @@ props2.png::CompressedTexture2D::7188845595363431993::1730738294::1745444056::1:
 Readme.txt::TextFile::-1::1744813220::0::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/::1745264463
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/Aseprite/::1745264454
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/PNGs/::1745264466
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/PNGs/::1745444055
 Arrow Trap - Level 1.png::CompressedTexture2D::4948506300767433373::1744813220::1745444054::1::::<><>::
 Arrow Trap - Level 2.png::CompressedTexture2D::417971460141136323::1744813220::1745444054::1::::<><>::
 Arrow Trap - Level 3.png::CompressedTexture2D::8408634876995175770::1744813220::1745444055::1::::<><>::
 Arrow.png::CompressedTexture2D::4329169323746148613::1744813220::1745444054::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/Transitions/::1745264464
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/Transitions/Aseprite/::1745264455
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/Transitions/PNGs/::1745264466
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/Transitions/PNGs/::1745444055
 Arrow Trap - Level 1 - Transition.png::CompressedTexture2D::6551789606302712554::1744813220::1745444055::1::::<><>::
 Arrow Trap - Level 2 - Transition.png::CompressedTexture2D::7690739787864619206::1744813220::1745444055::1::::<><>::
 Arrow Trap - Level 3 - Transition.png::CompressedTexture2D::7323643294903395501::1744813220::1745444055::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/::1745264463
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/Aseprite/::1745264455
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/PNGs/::1745264465
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/PNGs/::1745444055
 Ceiling Trap - Level 1.png::CompressedTexture2D::8675170159958436808::1744813220::1745444055::1::::<><>::
 Ceiling Trap - Level 2.png::CompressedTexture2D::4789387978131196795::1744813220::1745444055::1::::<><>::
 Ceiling Trap - Level 3.png::CompressedTexture2D::201006736493624595::1744813220::1745444055::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/Transitions/::1745264463
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/Transitions/Aseprite/::1745264455
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/Transitions/PNGs/::1745264466
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/Transitions/PNGs/::1745444055
 Ceiling Trap - Level 1 - Transition.png::CompressedTexture2D::2279904706971704945::1744813220::1745444055::1::::<><>::
 Ceiling Trap - Level 2 - Transition.png::CompressedTexture2D::3745721379371677226::1744813220::1745444055::1::::<><>::
 Ceiling Trap - Level 3 - Transition.png::CompressedTexture2D::1405506554703150665::1744813220::1745444055::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/::1745264463
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/Aseprite/::1745264455
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/PNGs/::1745264465
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/PNGs/::1745444056
 Fire Breather Trap - Level 1.png::CompressedTexture2D::9036157573299014447::1744813220::1745444055::1::::<><>::
 Fire Breather Trap - Level 2.png::CompressedTexture2D::1537555054810576975::1744813220::1745444055::1::::<><>::
 Fire Thrower Trap - Level 3.png::CompressedTexture2D::8967151913424258476::1744813220::1745444056::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/Transition/::1745264464
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/Transition/Aseprite/::1745264455
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/Transition/PNGs/::1745264466
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/Transition/PNGs/::1745444054
 Fire Breather Trap - Level 1 - Transition.png::CompressedTexture2D::2278011099846777398::1744813220::1745444054::1::::<><>::
 Fire Breather Trap - Level 2 - Transition.png::CompressedTexture2D::4093247283080061966::1744813220::1745444054::1::::<><>::
 Fire Breather Trap - Level 3 - Transition.png::CompressedTexture2D::2750821260953662238::1744813220::1745444054::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/::1745264463
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/Aseprite/::1745264455
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/::1745264455
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/::1745444054
 Fire Trap - Level 1.png::CompressedTexture2D::2919682147125876314::1744813220::1745444054::1::::<><>::
 Fire Trap - Level 2.png::CompressedTexture2D::3495196113899046011::1744813220::1745444054::1::::<><>::
 Fire Trap - Level 3.png::CompressedTexture2D::7680203146056065717::1744813220::1745444054::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/Transition/::1745264491
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/Transition/Aseprite/::1745264491
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/Transition/PNGs/::1745264491
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/Transition/PNGs/::1745444054
 Fire Trap - Level 1 - Transition.png::CompressedTexture2D::407543348970290930::1744813220::1745444054::1::::<><>::
 Fire Trap - Level 2 - Transition.png::CompressedTexture2D::6892983565305299169::1744813220::1745444054::1::::<><>::
 Fire Trap - Level 3 - Transition.png::CompressedTexture2D::472051139176219435::1744813220::1745444054::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Lightning Trap/::1745264463
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Lightning Trap/Aseprite/::1745264465
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Lightning Trap/PNGs/::1745264465
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Lightning Trap/PNGs/::1745444054
 Lightning Trap - Level 1.png::CompressedTexture2D::426240333193784127::1744813220::1745444054::1::::<><>::
 Lightning Trap - Level 2.png::CompressedTexture2D::2407888052044896207::1744813220::1745444054::1::::<><>::
 Lightning Trap - Level 3.png::CompressedTexture2D::1315966038568497782::1744813220::1745444054::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Lightning Trap/Transition/::1745264491
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Lightning Trap/Transition/Aseprite/::1745264491
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Lightning Trap/Transition/PNGs/::1745264491
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Lightning Trap/Transition/PNGs/::1745444054
 Lightning Trap - Level 1 - Transition.png::CompressedTexture2D::8635455758299985968::1744813220::1745444054::1::::<><>::
 Lightning Trap - Level 2 - Transition.png::CompressedTexture2D::2812088491967297630::1744813220::1745444054::1::::<><>::
 Lightning Trap - Level 3 - Transition.png::CompressedTexture2D::2623882535590145947::1744813220::1745444054::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/::1745264490
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Aseprite/::1745264491
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/PNGs/::1745264491
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/PNGs/::1745444054
 Magic trap - Level 1.png::CompressedTexture2D::5245185579625901738::1744813220::1745444054::1::::<><>::
 Magic trap - Level 2.png::CompressedTexture2D::5047821143274288189::1744813220::1745444054::1::::<><>::
 Magic trap - Level 3.png::CompressedTexture2D::8566735957708707743::1744813220::1745444054::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/::1745264503
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/Aseprite/::1745264504
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/::1745264504
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/::1745444056
 Magic trap - Level 1 - Transition.png::CompressedTexture2D::4604281082608217062::1744813220::1745444056::1::::<><>::
 Magic trap - Level 2 - Transition.png::CompressedTexture2D::1718076343750123163::1744813220::1745444056::1::::<><>::
 Magic trap - Level 3 - Transition.png::CompressedTexture2D::3184632417603492154::1744813220::1745444056::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Punch Trap/::1745264463
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Punch Trap/Aseprite/::1745264465
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Punch Trap/PNGs/::1745264465
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Punch Trap/PNGs/::1745444056
 Punch Trap - Level 1.png::CompressedTexture2D::3646929234865117742::1744813220::1745444056::1::::<><>::
 Punch Trap - Level 2.png::CompressedTexture2D::7292328246568899690::1744813220::1745444056::1::::<><>::
 Punch Trap - Level 3.png::CompressedTexture2D::6503822423150931413::1744813220::1745444056::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Punch Trap/Transition/::1745264491
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Punch Trap/Transition/Aseprite/::1745264491
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Punch Trap/Transition/PNGs/::1745264491
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Punch Trap/Transition/PNGs/::1745444056
 Punch Trap - Level 1 - Transition.png::CompressedTexture2D::9029033484129568477::1744813220::1745444056::1::::<><>::
 Punch Trap - Level 2 - Transition.png::CompressedTexture2D::1549077277092800493::1744813220::1745444056::1::::<><>::
 Punch Trap - Level 3 - Transition.png::CompressedTexture2D::4108871368127021400::1744813220::1745444056::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Sandworm Trap/::1745264463
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Sandworm Trap/Aseprite/::1745264465
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Sandworm Trap/PNGs/::1745264465
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Sandworm Trap/PNGs/::1745444057
 Sandworm trap - Level 1.png::CompressedTexture2D::2816838170935618487::1744813220::1745444057::1::::<><>::
 Sandworm trap - Level 2.png::CompressedTexture2D::6729792881563335168::1744813220::1745444057::1::::<><>::
 Sandworm trap - Level 3.png::CompressedTexture2D::6106289399353125858::1744813220::1745444057::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Sandworm Trap/Transitions/::1745264491
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Sandworm Trap/Transitions/Aseprite/::1745264491
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Sandworm Trap/Transitions/PNGs/::1745264491
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Sandworm Trap/Transitions/PNGs/::1745444057
 Sandworm trap - Level 1 - Transition.png::CompressedTexture2D::7789453946938967828::1744813220::1745444057::1::::<><>::
 Sandworm trap - Level 2 - Transition.png::CompressedTexture2D::646720944376283251::1744813220::1745444057::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Saw Trap/::1745264463
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Saw Trap/Aseprite/::1745264465
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Saw Trap/PNGs/::1745264465
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Saw Trap/PNGs/::1745444057
 Saw Trap - Level 1.png::CompressedTexture2D::3732522571091516660::1744813220::1745444057::1::::<><>::
 Saw Trap - Level 2.png::CompressedTexture2D::1225514340496368160::1744813220::1745444057::1::::<><>::
 Saw Trap - Level 3.png::CompressedTexture2D::6175452391576958596::1744813220::1745444057::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Saw Trap/Transitions/::1745264491
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Saw Trap/Transitions/Aseprite/::1745264491
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Saw Trap/Transitions/PNGs/::1745264491
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Saw Trap/Transitions/PNGs/::1745444057
 Saw Trap - Level 1 - Transition.png::CompressedTexture2D::4382872937763595165::1744813220::1745444057::1::::<><>::
 Saw Trap - Level 2 - Transition.png::CompressedTexture2D::8237569287600487394::1744813220::1745444056::1::::<><>::
 Saw Trap - Level 3 - Transition.png::CompressedTexture2D::840578079987078444::1744813220::1745444056::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Toxic Trap/::1745264491
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Toxic Trap/Aseprite/::1745264486
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Toxic Trap/PNGs/::1745264486
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Toxic Trap/PNGs/::1745444056
 Toxic Trap - Level 1.png::CompressedTexture2D::3270088065889115503::1744813220::1745444056::1::::<><>::
 Toxic Trap - Level 2.png::CompressedTexture2D::750528784941176246::1744813220::1745444056::1::::<><>::
 Toxic Trap - Level 3.png::CompressedTexture2D::9222449412331631121::1744813220::1745444056::1::::<><>::
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Toxic Trap/Transitions/::1745264504
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Toxic Trap/Transitions/Aseprite/::1745264504
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Toxic Trap/Transitions/PNGs/::1745264504
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Toxic Trap/Transitions/PNGs/::1745444056
 Toxic Trap - Level 1 - Transition.png::CompressedTexture2D::7319380027320576823::1744813220::1745444056::1::::<><>::
 Toxic Trap - Level 2 - Transition.png::CompressedTexture2D::3995545537556192619::1744813220::1745444056::1::::<><>::
 Toxic Trap - Level 3 - Transition.png::CompressedTexture2D::5124134990299389820::1744813220::1745444056::1::::<><>::
@@ -721,7 +721,7 @@ Toxic Trap - Level 3 - Transition.png::CompressedTexture2D::5124134990299389820:
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/::1745264491
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/Colour background/::1745264491
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/::1745264491
-::res://assests/Map_Assets/untitled folder/::1745264462
+::res://assests/Map_Assets/untitled folder/::1745444056
 bat.png::CompressedTexture2D::6930349297326121002::1730380743::1745444056::1::::<><>::
 elisa-spritesheet1.png::CompressedTexture2D::6503138365593545922::1730380743::1745444056::1::::<><>::
 exterior-parallaxBG1.png::CompressedTexture2D::5274660892927422664::1730380743::1745444056::1::::<><>::
@@ -735,24 +735,26 @@ Battle in the winter.mp3::AudioStreamMP3::6421039373740642891::1745179824::17454
 Heavenly Loop.ogg::AudioStreamOggVorbis::1433337272167656625::1745172539::1745444047::1::::<><>::
 music_jewels.ogg::AudioStreamOggVorbis::532352410616938412::1732285362::1745444047::1::::<><>::
 Path to Lake Land.ogg::AudioStreamOggVorbis::7205987671158059968::1745159067::1745444047::1::::<><>::
-::res://assests/SoundAssets/Music/One Man Symphony - A New Day's Hurry (Free)/::1745264495
+::res://assests/SoundAssets/Music/One Man Symphony - A New Day's Hurry (Free)/::1745444064
 cover.png::CompressedTexture2D::4295778084838350827::1745085291::1745444064::1::::<><>::
 One Man Symphony - A New Day's Hurry (Free) - 01 A New Day Begins (General Background Music).mp3::AudioStreamMP3::5688837961658145774::1745085291::1745444046::1::::<><>::
 One Man Symphony - A New Day's Hurry (Free) - 02 A New Day's Hurry (General Background Music).mp3::AudioStreamMP3::1466509919292171397::1745085290::1745444046::1::::<><>::
 ::res://assests/SoundAssets/sfx/::1745264499
 WindJump_sfx.wav::AudioStreamWAV::8385364593586628414::1732220921::1745444068::1::::<><>::
-::res://assests/SoundAssets/sfx/EnemySfx/::1745329247
+::res://assests/SoundAssets/sfx/EnemySfx/::1745444068
 fire-1.wav::AudioStreamWAV::7955666631021202936::1745245477::1745444068::1::::<><>::
 hit_sfx.mp3::AudioStreamMP3::5820414665301222794::1745179417::1745444046::1::::<><>::
 parry-ultrakill.mp3::AudioStreamMP3::2625353765141595517::1745329247::1745444046::1::::<><>::
-::res://assests/SoundAssets/sfx/PlayerSfx/::1745264500
+::res://assests/SoundAssets/sfx/PlayerSfx/::1745453770
+07._death_groan_male.wav::AudioStreamWAV::1362712080817474076::1745453770::1745453770::1::::<><>::
 Jump_sfxfr.mp3::AudioStreamMP3::2979713999404214547::1732285034::1745444046::1::::<><>::
 Nine Sols Accurate Parry Sound Effect.wav::AudioStreamWAV::6978548246913201074::1745213195::1745444068::1::::<><>::
 PoofDash_sfx.wav::AudioStreamWAV::507277381874757894::1732184522::1745444068::1::::<><>::
 Running_sfx.mp3::AudioStreamMP3::1029456006375380752::1732137021::1745444046::1::::<><>::
 sword_sfx.wav::AudioStreamWAV::4119053341501767609::1745178298::1745444068::1::::<><>::
-::res://assests/SoundAssets/sfx/UISfx/::1745424061
+::res://assests/SoundAssets/sfx/UISfx/::1745448233
 Click_Sfx.mp3::AudioStreamMP3::8127845866555066690::1745088214::1745444046::1::::<><>::
+dark-souls-you-died-sound-effect_hm5sYFG.mp3::AudioStreamMP3::5753928655586401948::1745448232::1745448233::1::::<><>::
 KL Peach Game Over 2.mp3::AudioStreamMP3::7646648615249880806::1745424060::1745444046::1::::<><>::
 Select_Sfx.mp3::AudioStreamMP3::6977312366901552328::1745086985::1745444046::1::::<><>::
 spell1_0.wav::AudioStreamWAV::9059492953368650139::1745317140::1745444068::1::::<><>::
@@ -763,21 +765,21 @@ fireball.tscn::PackedScene::2683960244880007840::1745441794::0::1::::<><>::uid:/
 hitbox.tscn::PackedScene::7179118862133894277::1741687298::0::1::::<><>::
 Killzone.gd::GDScript::-1::1742569793::0::1::::<>Area2D<>::
 Label.gd::GDScript::-1::1735609043::0::1::::<>Label<>::
-player.tscn::PackedScene::4752360610448023974::1745441794::0::1::::<><>::res://Script/Player/player.gd<>uid://ciq2clr7q7qy4::::res://assests/CharacterAssets/Adventurer-1.5/adventurer-v1.5-Sheet.png<>uid://ct2bv87xa6gvk::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png<>uid://b2ah1ope4ht3w::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Run.png<>uid://t57l73lvwrv5::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack2.png<>uid://uxmyhwac8i1::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack.png<>uid://dhvgpppbnou14::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Jump.png<>uid://dx05bk2nls1c0::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Dash.png<>uid://c6ckv7ebop4ca::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Fall.png<>res://Script/Player/Camera2D.gd<>uid://dv5ieti46nab7::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_CrouchAttack.png<>uid://2japemjny6yc::::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Death.png<>uid://ht41b8tt7dvg::::res://assests/SoundAssets/Music/music_jewels.ogg<>uid://hhy1wyxvcvow::::res://assests/SoundAssets/sfx/PlayerSfx/PoofDash_sfx.wav<>res://Scene/Label.gd<>uid://bipnppc86to24::::res://assests/SoundAssets/sfx/PlayerSfx/Jump_sfxfr.mp3<>uid://drhwfpligmh06::::res://assests/CharacterAssets/Health/heart_16x16.png<>uid://oww8wpy3gnue::::res://assests/SoundAssets/sfx/PlayerSfx/Running_sfx.mp3<>uid://byxkha8pftixd::::res://assests/SoundAssets/sfx/PlayerSfx/sword_sfx.wav<>uid://disy4vrgayvgn::::res://Scene/UI Scene/pause_menu.tscn<>uid://dcjwtx5qxlxll::::res://Scene/UI Scene/game_over.tscn
+player.tscn::PackedScene::4752360610448023974::1745453357::0::1::::<><>::res://Script/Player/player.gd<>uid://ciq2clr7q7qy4::::res://assests/CharacterAssets/Adventurer-1.5/adventurer-v1.5-Sheet.png<>uid://ct2bv87xa6gvk::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png<>uid://b2ah1ope4ht3w::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Run.png<>uid://t57l73lvwrv5::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack2.png<>uid://uxmyhwac8i1::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack.png<>uid://dhvgpppbnou14::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Jump.png<>uid://dx05bk2nls1c0::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Dash.png<>uid://c6ckv7ebop4ca::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Fall.png<>res://Script/Player/Camera2D.gd<>uid://dv5ieti46nab7::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_CrouchAttack.png<>uid://2japemjny6yc::::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Death.png<>uid://ht41b8tt7dvg::::res://assests/SoundAssets/Music/music_jewels.ogg<>uid://hhy1wyxvcvow::::res://assests/SoundAssets/sfx/PlayerSfx/PoofDash_sfx.wav<>res://Scene/Label.gd<>uid://bipnppc86to24::::res://assests/SoundAssets/sfx/PlayerSfx/Jump_sfxfr.mp3<>uid://drhwfpligmh06::::res://assests/CharacterAssets/Health/heart_16x16.png<>uid://oww8wpy3gnue::::res://assests/SoundAssets/sfx/PlayerSfx/Running_sfx.mp3<>uid://byxkha8pftixd::::res://assests/SoundAssets/sfx/PlayerSfx/sword_sfx.wav<>uid://disy4vrgayvgn::::res://Scene/UI Scene/pause_menu.tscn<>uid://dcjwtx5qxlxll::::res://Scene/UI Scene/game_over.tscn
 range_enemy.tscn::PackedScene::1474555406837762883::1745441794::0::1::::<><>::res://Script/Enemy/range_enemy.gd<>uid://d3uf1txw2ctof::::res://assests/CharacterAssets/Necromancer_creativekind-Sheet.png<>uid://bsdl26s5toenh::::res://assests/CharacterAssets/Bubbles/Greyscale/32x32/bubble_6_grayscale.png
 void_area.tscn::PackedScene::6328305822418347936::1745021929::0::1::::<><>::res://VoidArea.gd
 world.gd::GDScript::-1::1742569555::0::1::::<>Node2D<>::
-world.tscn::PackedScene::3767018633967888219::1745441794::0::1::::<><>::uid://x4ie4sdcttwq::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background1.png<>uid://bl6jdogdispmk::::res://Scene/EnemyScene.tscn<>uid://d0drbopmk0w16::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/mainlev_build.png<>res://Script/Level1.gd<>uid://ccitl83n7gb78::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background2.png<>uid://b8ycxj1kuxt6e::::res://Scene/player.tscn<>uid://dv1bwom1el5xt::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background3.png<>uid://ctr8bjkw7fxnf::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background4a.png<>uid://wjdxp5cumskd::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background4b.png<>uid://vajyhg8oc33l::::res://Scene/range_enemy.tscn<>uid://cwfqji2gt5vi3::::res://Scene/void_area.tscn<>uid://23v461flxbnv::::res://assests/CharacterAssets/Health/hearts/heartDisplay.png<>res://Scene/Killzone.gd<>uid://dcjwtx5qxlxll::::res://Scene/UI Scene/game_over.tscn<>uid://cxqnty5p326vn::::res://assests/SoundAssets/Music/Battle in the winter.mp3<>uid://c0ycfcjclicvk::::res://Scene/checkpoint.tscn
+world.tscn::PackedScene::3767018633967888219::1745453356::0::1::::<><>::uid://x4ie4sdcttwq::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background1.png<>uid://bl6jdogdispmk::::res://Scene/EnemyScene.tscn<>uid://d0drbopmk0w16::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/mainlev_build.png<>res://Script/Level1.gd<>uid://ccitl83n7gb78::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background2.png<>uid://b8ycxj1kuxt6e::::res://Scene/player.tscn<>uid://dv1bwom1el5xt::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background3.png<>uid://ctr8bjkw7fxnf::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background4a.png<>uid://wjdxp5cumskd::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background4b.png<>uid://vajyhg8oc33l::::res://Scene/range_enemy.tscn<>uid://cwfqji2gt5vi3::::res://Scene/void_area.tscn<>uid://23v461flxbnv::::res://assests/CharacterAssets/Health/hearts/heartDisplay.png<>res://Scene/Killzone.gd<>uid://dcjwtx5qxlxll::::res://Scene/UI Scene/game_over.tscn<>uid://cxqnty5p326vn::::res://assests/SoundAssets/Music/Battle in the winter.mp3<>uid://c0ycfcjclicvk::::res://Scene/checkpoint.tscn
 ::res://Scene/DASH/::1745441794
 dash_effect.tscn::PackedScene::4946501962440602743::1745352367::0::1::::<><>::res://Scene/DASH/dash_effect_Shader.gdshader<>uid://c61g6xtk2y4vv::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_Dash.png<>res://Script/Player/DashEffect.gd
 dash_effect_Shader.gdshader::Shader::-1::1745441794::0::1::::<><>::
 dash_flash.tscn::PackedScene::1026929657113845244::1744811844::0::1::::<><>::uid://c7r2eseeyrsof::::res://assests/CharacterAssets/Adventurer-1.5/Individual Sprites/adventurer-crnr-jmp-00.png
-::res://Scene/Levels/::1745441793
-intro.tscn::PackedScene::9112050866059218208::1745441791::0::1::::<><>::uid://cxf7lecc4il8i::::res://assests/GameArt/openart-image_OasAJqtB_1745152981276_raw.jpg<>res://Script/Transitions/intro.gd<>uid://cqv0nebu63pr5::::res://assests/CharacterAssets/Fonts/m6x11plus.ttf<>uid://bkqcrcnnqvcal::::res://assests/GameArt/openart-image_3wiiVceq_1745157774792_raw.jpg<>uid://kcxcqd8gp6p7::::res://assests/CharacterAssets/Fonts/m5x7.ttf<>uid://mlp1x7uh3pya::::res://assests/GameArt/openart-image_N3-wJ6c5_1745160061035_raw.jpg<>uid://dawvtge2ij4bc::::res://assests/SoundAssets/Music/Path to Lake Land.ogg<>uid://boy15gnplhwjd::::res://assests/GameArt/openart-image_yUdLK_oL_1745162888754_raw.jpg<>uid://df4am84jxbsr5::::res://assests/GameArt/openart-image_4dRB5X3m_1745164063777_raw.jpg<>uid://b3vodqx3tfuq5::::res://assests/GameArt/openart-image_WyWjypuJ_1745164135746_raw.jpg
-main_menu.tscn::PackedScene::7611012555535773553::1745441791::0::1::::<><>::res://Script/Transitions/main_menu.gd<>uid://d3rbbr6ogxp1i::::res://assests/CharacterAssets/Fonts/DungeonFont.ttf<>uid://kcxcqd8gp6p7::::res://assests/CharacterAssets/Fonts/m5x7.ttf<>uid://cqv0nebu63pr5::::res://assests/CharacterAssets/Fonts/m6x11plus.ttf<>uid://23v461flxbnv::::res://assests/CharacterAssets/Health/hearts/heartDisplay.png<>uid://cnbylhtoj67sc::::res://assests/SoundAssets/Music/One Man Symphony - A New Day's Hurry (Free)/One Man Symphony - A New Day's Hurry (Free) - 01 A New Day Begins (General Background Music).mp3<>uid://c6n4kyp7nnfnc::::res://assests/SoundAssets/sfx/UISfx/Select_Sfx.mp3<>uid://dn2go0ve78lve::::res://assests/SoundAssets/sfx/UISfx/Click_Sfx.mp3
-tutorial.tscn::PackedScene::3015445634464333574::1745441793::0::1::::<><>::res://tutorial.gd<>uid://c0ycfcjclicvk::::res://Scene/checkpoint.tscn<>uid://c4wed5vt4x1p3::::res://assests/Map_Assets/Checkpoint/Dimensional_Portal.png<>uid://b8ycxj1kuxt6e::::res://Scene/player.tscn<>uid://dvntwam3r3xaw::::res://assests/Map_Assets/clouds/cloud_single/cloud1.png<>res://Script/UpDownCloud.gd<>res://Script/Transitions/End.gd<>uid://dfumi4q0ker0y::::res://assests/Map_Assets/clouds/cloud_single/cloud3.png<>uid://uok4c58g1utl::::res://assests/SoundAssets/Music/Heavenly Loop.ogg<>uid://bl6jdogdispmk::::res://Scene/EnemyScene.tscn<>uid://vajyhg8oc33l::::res://Scene/range_enemy.tscn
-::res://Scene/UI Scene/::1745441791
-game_over.tscn::PackedScene::7319590097206308773::1745441791::0::1::::<><>::uid://d3rbbr6ogxp1i::::res://assests/CharacterAssets/Fonts/DungeonFont.ttf<>res://Script/UI Script/game_over.gd<>uid://cqv0nebu63pr5::::res://assests/CharacterAssets/Fonts/m6x11plus.ttf<>uid://23v461flxbnv::::res://assests/CharacterAssets/Health/hearts/heartDisplay.png<>uid://dg7dgkpbo1g67::::res://assests/SoundAssets/sfx/UISfx/KL Peach Game Over 2.mp3
+::res://Scene/Levels/::1745453357
+intro.tscn::PackedScene::9112050866059218208::1745453357::0::1::::<><>::uid://cxf7lecc4il8i::::res://assests/GameArt/openart-image_OasAJqtB_1745152981276_raw.jpg<>res://Script/Transitions/intro.gd<>uid://cqv0nebu63pr5::::res://assests/CharacterAssets/Fonts/m6x11plus.ttf<>uid://bkqcrcnnqvcal::::res://assests/GameArt/openart-image_3wiiVceq_1745157774792_raw.jpg<>uid://kcxcqd8gp6p7::::res://assests/CharacterAssets/Fonts/m5x7.ttf<>uid://mlp1x7uh3pya::::res://assests/GameArt/openart-image_N3-wJ6c5_1745160061035_raw.jpg<>uid://dawvtge2ij4bc::::res://assests/SoundAssets/Music/Path to Lake Land.ogg<>uid://boy15gnplhwjd::::res://assests/GameArt/openart-image_yUdLK_oL_1745162888754_raw.jpg<>uid://df4am84jxbsr5::::res://assests/GameArt/openart-image_4dRB5X3m_1745164063777_raw.jpg<>uid://b3vodqx3tfuq5::::res://assests/GameArt/openart-image_WyWjypuJ_1745164135746_raw.jpg
+main_menu.tscn::PackedScene::7611012555535773553::1745453357::0::1::::<><>::res://Script/Transitions/main_menu.gd<>uid://d3rbbr6ogxp1i::::res://assests/CharacterAssets/Fonts/DungeonFont.ttf<>uid://kcxcqd8gp6p7::::res://assests/CharacterAssets/Fonts/m5x7.ttf<>uid://cqv0nebu63pr5::::res://assests/CharacterAssets/Fonts/m6x11plus.ttf<>uid://23v461flxbnv::::res://assests/CharacterAssets/Health/hearts/heartDisplay.png<>uid://cnbylhtoj67sc::::res://assests/SoundAssets/Music/One Man Symphony - A New Day's Hurry (Free)/One Man Symphony - A New Day's Hurry (Free) - 01 A New Day Begins (General Background Music).mp3<>uid://c6n4kyp7nnfnc::::res://assests/SoundAssets/sfx/UISfx/Select_Sfx.mp3<>uid://dn2go0ve78lve::::res://assests/SoundAssets/sfx/UISfx/Click_Sfx.mp3
+tutorial.tscn::PackedScene::3015445634464333574::1745453356::0::1::::<><>::res://tutorial.gd<>uid://c0ycfcjclicvk::::res://Scene/checkpoint.tscn<>uid://c4wed5vt4x1p3::::res://assests/Map_Assets/Checkpoint/Dimensional_Portal.png<>uid://b8ycxj1kuxt6e::::res://Scene/player.tscn<>uid://dvntwam3r3xaw::::res://assests/Map_Assets/clouds/cloud_single/cloud1.png<>res://Script/UpDownCloud.gd<>res://Script/Transitions/End.gd<>uid://dfumi4q0ker0y::::res://assests/Map_Assets/clouds/cloud_single/cloud3.png<>uid://uok4c58g1utl::::res://assests/SoundAssets/Music/Heavenly Loop.ogg<>uid://bl6jdogdispmk::::res://Scene/EnemyScene.tscn<>uid://vajyhg8oc33l::::res://Scene/range_enemy.tscn
+::res://Scene/UI Scene/::1745453356
+game_over.tscn::PackedScene::7319590097206308773::1745453356::0::1::::<><>::uid://d3rbbr6ogxp1i::::res://assests/CharacterAssets/Fonts/DungeonFont.ttf<>res://Script/UI Script/game_over.gd<>uid://cqv0nebu63pr5::::res://assests/CharacterAssets/Fonts/m6x11plus.ttf<>uid://23v461flxbnv::::res://assests/CharacterAssets/Health/hearts/heartDisplay.png<>uid://cn8imnemstrt1::::res://assests/SoundAssets/sfx/UISfx/dark-souls-you-died-sound-effect_hm5sYFG.mp3
 pause_menu.tscn::PackedScene::7759441725131883757::1745441791::0::1::::<><>::uid://d3rbbr6ogxp1i::::res://assests/CharacterAssets/Fonts/DungeonFont.ttf<>res://Script/UI Script/pause_menu.gd<>uid://kcxcqd8gp6p7::::res://assests/CharacterAssets/Fonts/m5x7.ttf<>uid://drhwfpligmh06::::res://assests/CharacterAssets/Health/heart_16x16.png<>uid://dn2go0ve78lve::::res://assests/SoundAssets/sfx/UISfx/Click_Sfx.mp3<>uid://c6n4kyp7nnfnc::::res://assests/SoundAssets/sfx/UISfx/Select_Sfx.mp3
 ::res://Script/::1745443472
 Bonfire.gd::GDScript::-1::1745438385::0::1::::<>Area2D<>::
@@ -791,10 +793,10 @@ Enemy.gd::GDScript::-1::1745408610::0::1::::Enemy<>CharacterBody2D<>::
 fireball.gd::GDScript::-1::1745427345::0::1::::Homing_Fireball<>Area2D<>::
 Idle.gd::GDScript::-1::1737034296::0::1::::Idle<>State<>::
 range_enemy.gd::GDScript::-1::1745408610::0::1::::<>CharacterBody2D<>::
-::res://Script/Player/::1745438385
+::res://Script/Player/::1745453356
 Camera2D.gd::GDScript::-1::1743424695::0::1::::<>Camera2D<>::
 DashEffect.gd::GDScript::-1::1745264733::0::1::::<>AnimatedSprite2D<>::
-player.gd::GDScript::-1::1745438385::0::1::::Player<>CharacterBody2D<>::
+player.gd::GDScript::-1::1745453356::0::1::::Player<>CharacterBody2D<>::
 ::res://Script/State/::1745264451
 State.gd::GDScript::-1::1728645571::0::1::::State<>Node<>::
 StateMachine.gd::GDScript::-1::1737034296::0::1::::StateMachine<>Node<>::
@@ -802,6 +804,6 @@ StateMachine.gd::GDScript::-1::1737034296::0::1::::StateMachine<>Node<>::
 End.gd::GDScript::-1::1745406167::0::1::::<>Sprite2D<>::
 intro.gd::GDScript::-1::1745441678::0::1::::<>Control<>::
 main_menu.gd::GDScript::-1::1745441678::0::1::::<>Control<>::
-::res://Script/UI Script/::1745438707
-game_over.gd::GDScript::-1::1745438707::0::1::::<>Control<>::
+::res://Script/UI Script/::1745453073
+game_over.gd::GDScript::-1::1745453073::0::1::::<>Control<>::
 pause_menu.gd::GDScript::-1::1745432266::0::1::::<>Control<>::

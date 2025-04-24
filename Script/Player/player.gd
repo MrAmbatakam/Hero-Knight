@@ -54,6 +54,8 @@ var attack_cooldown = false
 #Deflect variable
 var is_deflect = false
 var deflect_cooldown = false
+#Dead variable
+var is_dead = false
 
 func _ready():
 	#AI
@@ -162,7 +164,7 @@ func _physics_process(delta):
 		player_run_sfx.stop()
 		
 	#Handle Attack
-	if attack_cooldown == false and !is_deflect:
+	if attack_cooldown == false and !is_deflect and !is_dead:
 		if Input.is_action_just_pressed("Attack") and !is_attack:
 			if is_on_floor():
 				ground_attack()
@@ -170,7 +172,7 @@ func _physics_process(delta):
 				air_attack()
 	
 	#Handle Deflect
-	if !is_attack and !deflect_cooldown:
+	if !is_attack and !is_dead and !deflect_cooldown:
 		if Input.is_action_just_pressed("Deflect"):
 			deflect()
 	
@@ -225,42 +227,53 @@ func air_attack():
 	#disable_gravity = false
 
 func attack1():
-	animation_player.play("Attack1")
-	is_attack = true
-	attack_string += "Attack"
-	$Timer/Attack1Timer.start()
-	if is_attack:
-		if player_direction == 1:
-			$CollisionShape2D.position.x = 10
-			$Player_hitbox/CollisionShape2D.position.x = 10
-		if player_direction == -1:
-			$CollisionShape2D.position.x = -10
-			$Player_hitbox/CollisionShape2D.position.x = -10
+		animation_player.play("Attack1")
+		is_attack = true
+		attack_string += "Attack"
+		$Timer/Attack1Timer.start()
+		if is_attack:
+			if player_direction == 1:
+				$CollisionShape2D.position.x = 10
+				$Player_hitbox/CollisionShape2D.position.x = 10
+			if player_direction == -1:
+				$CollisionShape2D.position.x = -10
+				$Player_hitbox/CollisionShape2D.position.x = -10
 
 func attack2():
-	animation_player.play("Attack2")
-	is_attack = true
-	attack_cooldown = true
-	attack_string = ""
-	$Timer/Attack2Timer.start()
-	if is_attack:
-		if player_direction == 1:
-			$CollisionShape2D.position.x = 10
-			$Player_hitbox/CollisionShape2D.position.x = 10
-		if player_direction == -1:
-			$CollisionShape2D.position.x = 0
-			$Player_hitbox/CollisionShape2D.position.x = 0
+		animation_player.play("Attack2")
+		is_attack = true
+		attack_cooldown = true
+		attack_string = ""
+		$Timer/Attack2Timer.start()
+		if is_attack:
+			if player_direction == 1:
+				$CollisionShape2D.position.x = 10
+				$Player_hitbox/CollisionShape2D.position.x = 10
+			if player_direction == -1:
+				$CollisionShape2D.position.x = 0
+				$Player_hitbox/CollisionShape2D.position.x = 0
 	#$Timer/Attack2Timer.start()
 	#disable_gravity = false
 	#attack_cooldown = true
 
 func deflect():
-	animation_player.play("Deflect")
-	is_deflect = true
+	if !is_dead:
+		animation_player.play("Deflect")
+		is_deflect = true
 	#$Sprite2D.modulate = Color(0,1,0)
 	#$Player_AttackBox1/CollisionPolygon2D.disabled = true
 	#$Player_AttackBox2/CollisionPolygon2D.disabled = true
 
+func dead():
+	animation_player.play("Death")
+	is_dead = true
+	velocity = Vector2.ZERO
+	set_physics_process(false)
+	set_collision_mask_value(8, true)
+	set_collision_mask_value(1, false)
+	set_collision_mask_value(2, false)
+	set_collision_layer_value(1, false)
+	set_collision_layer_value(4, false)
 
 func buffer_jump():
 		velocity.y = JUMP_VELOCITY
@@ -270,20 +283,18 @@ func buffer_jump():
 func health_system():
 	if invincible_time == false:
 		player_health -= 1
-		$UI/Heart/Sprite2D.size.x -= 16
+		$UI/Hearts.size.x -= 16
 		Global.emit_signal('screen_shake')
 	if player_health == 0:
+		dead()
 		Global.fireball_count = 0
-		$UI/GameOver.game_over()
+		$UI/Hearts.hide()
+		#$UI/GameOver.game_over()
 		#get_node("UI/GameOver").game_over()
-		
-		
-		
-		#$UI/Heart/Sprite2D.hide()
 
 func reset_health():
 	player_health = 5
-	$UI/Heart/Sprite2D.size.x = 80
+	$UI/Hearts.size.x = 80
 
 func hurt_effect():
 	#Handle Flash
@@ -315,7 +326,7 @@ func initiate_dash_flash():
 
 ################################ ANIMATIONS CENTER #############################################
 func update_movement_animation():
-	if !is_attack and !is_deflect:
+	if !is_attack and !is_deflect and !is_dead:
 		if is_on_floor() and can_dash == false:
 			if velocity.x != 0:
 				animation_player.play("Run")
@@ -349,10 +360,15 @@ func _on_animation_player_animation_finished(anim_name):
 			$Player_hitbox/CollisionShape2D.position.x = 6
 		#$Player_AttackBox1/CollisionPolygon2D.disabled = true
 		#$Player_AttackBox2/CollisionPolygon2D.disabled = true
-
 	if anim_name == "Deflect":
 		is_deflect = false
 		$Sprite2D.modulate = Color(1,1,1)
+	if anim_name == "Death":
+		$UI/Transition.play("Fade_Out")
+
+func _on_transition_animation_finished(anim_name):
+	if anim_name == "Fade_Out":
+		$UI/GameOver.game_over_transition()
 
 ################################ TIMER CENTER #############################################
 #Timer For Dash
