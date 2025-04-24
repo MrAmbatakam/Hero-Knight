@@ -1,0 +1,77 @@
+[gd_scene load_steps=7 format=3 uid="uid://b3fp3vh12a1eb"]
+
+[ext_resource type="FontFile" uid="uid://d3rbbr6ogxp1i" path="res://assests/CharacterAssets/Fonts/DungeonFont.ttf" id="1_h27py"]
+[ext_resource type="Script" path="res://Script/UI Script/thank_you_for_playing.gd" id="1_ndhcx"]
+[ext_resource type="FontFile" uid="uid://cqv0nebu63pr5" path="res://assests/CharacterAssets/Fonts/m6x11plus.ttf" id="2_5t665"]
+[ext_resource type="AudioStream" uid="uid://b70bixqyjvo1x" path="res://assests/SoundAssets/Music/PeacefulScene.ogg" id="4_1qtwj"]
+[ext_resource type="AudioStream" uid="uid://dn2go0ve78lve" path="res://assests/SoundAssets/sfx/UISfx/Click_Sfx.mp3" id="5_c2tfp"]
+[ext_resource type="AudioStream" uid="uid://c6n4kyp7nnfnc" path="res://assests/SoundAssets/sfx/UISfx/Select_Sfx.mp3" id="6_0bxtp"]
+
+[node name="ThankYouForPlaying" type="Control"]
+z_index = -1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ndhcx")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1079.0
+offset_bottom = 414.0
+theme_override_fonts/font = ExtResource("1_h27py")
+theme_override_font_sizes/font_size = 100
+text = "Thank You For Playing
+from 雪"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -212.0
+offset_top = -175.0
+offset_right = 242.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_5t665")
+theme_override_font_sizes/font_size = 50
+text = "Back To MainMenu"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_1qtwj")
+
+[node name="Click_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_c2tfp")
+volume_db = 5.0
+
+[node name="Select_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_0bxtp")
+volume_db = -10.0
+
+[connection signal="mouse_entered" from="Panel/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]

@@ -6,7 +6,7 @@ extends Control
 
 func _ready():
 	self.hide()
-	#add_to_group("Game_Over")
+	add_to_group("Game_Over")
 
 
 func _on_retry_pressed():

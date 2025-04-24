@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name Enemy
 
-var enemy_health = 10
+var enemy_health = 6
 @onready var health_bar = $HealthBar
 @onready var enemy_animated_sprite : AnimationPlayer = $AnimationPlayer
 @onready var raycast_detection : RayCast2D = $RayCast2D

@@ -22,3 +22,9 @@ res://Scene/End_Sprite2.gd
 res://Script/Level1.gd
 res://Scene/range_enemy.tscn
 res://Scene/range_enemy.gd
+res://Script/Enemy/Enemy.gd
+res://Scene/EnemyScene.tscn
+res://Scene/UI Scene/pause_menu.tscn
+res://Scene/UI Scene/thank_you_for_playing.tscn
+res://Script/UI Script/thank_you_for_playing.gd
+res://Scene/fireball.tscn

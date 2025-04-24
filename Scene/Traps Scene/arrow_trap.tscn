@@ -45,7 +45,6 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="Animation_oe1ss"]
 resource_name = "ArrowTrap"
 length = 1.8
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -115,3 +114,8 @@ root_node = NodePath("../Sprite2D")
 libraries = {
 "": SubResource("AnimationLibrary_r1wyc")
 }
+
+[node name="Cooldown" type="Timer" parent="."]
+wait_time = 10.0
+
+[connection signal="timeout" from="Cooldown" to="." method="_on_cooldown_timeout"]

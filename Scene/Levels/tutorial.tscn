@@ -344,7 +344,6 @@ vframes = 2
 script = ExtResource("3_aq0u4")
 
 [node name="End_Area2D" type="Area2D" parent="End_Sprite"]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="End_Sprite/End_Area2D"]
 shape = SubResource("CapsuleShape2D_beo51")
@@ -355,7 +354,7 @@ libraries = {
 }
 
 [node name="Player" parent="." instance=ExtResource("2_nhlbb")]
-position = Vector2(275, 352)
+position = Vector2(214, 293)
 
 [node name="CloseEnemy" type="Node" parent="."]
 
@@ -381,10 +380,10 @@ position = Vector2(2056, 184)
 [node name="CeilingTraps" type="Node" parent="Traps"]
 
 [node name="CeilingTrap" parent="Traps/CeilingTraps" instance=ExtResource("12_snysd")]
-position = Vector2(1134, 85)
+position = Vector2(1132, 71)
 
 [node name="CeilingTrap2" parent="Traps/CeilingTraps" instance=ExtResource("12_snysd")]
-position = Vector2(1102, 85)
+position = Vector2(1102, 71)
 
 [node name="FireTraps" type="Node" parent="Traps"]
 
@@ -394,6 +393,9 @@ position = Vector2(991, 157)
 [node name="SawTraps" type="Node" parent="Traps"]
 
 [node name="ArrowTraps" type="Node" parent="Traps"]
+
+[node name="ArrowTrap" parent="Traps/ArrowTraps" instance=ExtResource("15_cfdwj")]
+position = Vector2(1546, 79)
 
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
@@ -446,8 +448,86 @@ position = Vector2(1701, 81)
 [node name="MovingSaw" parent="." instance=ExtResource("14_neafy")]
 position = Vector2(741, 211)
 
-[node name="ArrowTrap" parent="." instance=ExtResource("15_cfdwj")]
-position = Vector2(365, 304)
+[node name="Controls" type="Panel" parent="."]
+z_index = -2
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 184.0
+offset_right = 406.0
+offset_bottom = 317.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Controls"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "A D Left/Right
+Space Jump
+Left Click Attack
+Right Click Deflect (Can only deflect fireball)
+"
+
+[node name="Checkpoint3" type="Panel" parent="."]
+z_index = -2
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 500.0
+offset_top = 120.0
+offset_right = 587.0
+offset_bottom = 142.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Checkpoint3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "CheckPoint
+"
+
+[node name="EndPoint" type="Panel" parent="."]
+z_index = -2
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 500.0
+offset_top = 120.0
+offset_right = 587.0
+offset_bottom = 142.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="EndPoint"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2968.0
+offset_top = -100.0
+offset_right = 2911.0
+offset_bottom = -99.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "End
+"
 
 [connection signal="area_entered" from="End_Sprite/End_Area2D" to="End_Sprite" method="_on_area_2d_area_entered"]
 [connection signal="animation_finished" from="Portal_Transition" to="End_Sprite" method="_on_portal_transition_animation_finished"]

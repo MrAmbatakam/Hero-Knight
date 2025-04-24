@@ -58,7 +58,6 @@ var deflect_cooldown = false
 var is_dead = false
 
 func _ready():
-	#AI
 	if Checkpoint.last_scene == get_tree().current_scene.scene_file_path and Checkpoint.last_position:
 		global_position = Checkpoint.last_position
 	$Player_AttackBox1/CollisionPolygon2D.disabled = true
