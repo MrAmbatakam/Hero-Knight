@@ -594,9 +594,9 @@ props1.png::CompressedTexture2D::55889463252525715::1730738294::1745444056::1:::
 props2.png::CompressedTexture2D::7188845595363431993::1730738294::1745444056::1::::<><>::
 ::res://assests/Map_Assets/PixelFantasy_Caves_1.0/PSD/::1745264463
 ::res://assests/Map_Assets/Traps/::1745264396
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/::1745264463
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/::1745264458
 Readme.txt::TextFile::-1::1744813220::0::1::::<><>::
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/::1745264463
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/::1745264458
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/Aseprite/::1745264454
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/PNGs/::1745444055
 Arrow Trap - Level 1.png::CompressedTexture2D::4948506300767433373::1744813220::1745444054::1::::<><>::
@@ -609,7 +609,7 @@ Arrow.png::CompressedTexture2D::4329169323746148613::1744813220::1745444054::1::
 Arrow Trap - Level 1 - Transition.png::CompressedTexture2D::6551789606302712554::1744813220::1745444055::1::::<><>::
 Arrow Trap - Level 2 - Transition.png::CompressedTexture2D::7690739787864619206::1744813220::1745444055::1::::<><>::
 Arrow Trap - Level 3 - Transition.png::CompressedTexture2D::7323643294903395501::1744813220::1745444055::1::::<><>::
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/::1745264463
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/::1745264458
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/Aseprite/::1745264455
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Ceiling Trap/PNGs/::1745444055
 Ceiling Trap - Level 1.png::CompressedTexture2D::8675170159958436808::1744813220::1745444055::1::::<><>::
@@ -621,7 +621,7 @@ Ceiling Trap - Level 3.png::CompressedTexture2D::201006736493624595::1744813220:
 Ceiling Trap - Level 1 - Transition.png::CompressedTexture2D::2279904706971704945::1744813220::1745444055::1::::<><>::
 Ceiling Trap - Level 2 - Transition.png::CompressedTexture2D::3745721379371677226::1744813220::1745444055::1::::<><>::
 Ceiling Trap - Level 3 - Transition.png::CompressedTexture2D::1405506554703150665::1744813220::1745444055::1::::<><>::
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/::1745264463
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/::1745264458
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/Aseprite/::1745264455
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/PNGs/::1745444056
 Fire Breather Trap - Level 1.png::CompressedTexture2D::9036157573299014447::1744813220::1745444055::1::::<><>::
@@ -645,7 +645,7 @@ Fire Trap - Level 3.png::CompressedTexture2D::7680203146056065717::1744813220::1
 Fire Trap - Level 1 - Transition.png::CompressedTexture2D::407543348970290930::1744813220::1745444054::1::::<><>::
 Fire Trap - Level 2 - Transition.png::CompressedTexture2D::6892983565305299169::1744813220::1745444054::1::::<><>::
 Fire Trap - Level 3 - Transition.png::CompressedTexture2D::472051139176219435::1744813220::1745444054::1::::<><>::
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Lightning Trap/::1745264463
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Lightning Trap/::1745264458
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Lightning Trap/Aseprite/::1745264465
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Lightning Trap/PNGs/::1745444054
 Lightning Trap - Level 1.png::CompressedTexture2D::426240333193784127::1744813220::1745444054::1::::<><>::
@@ -657,7 +657,7 @@ Lightning Trap - Level 3.png::CompressedTexture2D::1315966038568497782::17448132
 Lightning Trap - Level 1 - Transition.png::CompressedTexture2D::8635455758299985968::1744813220::1745444054::1::::<><>::
 Lightning Trap - Level 2 - Transition.png::CompressedTexture2D::2812088491967297630::1744813220::1745444054::1::::<><>::
 Lightning Trap - Level 3 - Transition.png::CompressedTexture2D::2623882535590145947::1744813220::1745444054::1::::<><>::
-::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/::1745264490
+::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/::1745264488
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Aseprite/::1745264491
 ::res://assests/Map_Assets/Traps/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/PNGs/::1745444054
 Magic trap - Level 1.png::CompressedTexture2D::5245185579625901738::1744813220::1745444054::1::::<><>::
@@ -765,21 +765,22 @@ fireball.tscn::PackedScene::2683960244880007840::1745441794::0::1::::<><>::uid:/
 hitbox.tscn::PackedScene::7179118862133894277::1741687298::0::1::::<><>::
 Killzone.gd::GDScript::-1::1742569793::0::1::::<>Area2D<>::
 Label.gd::GDScript::-1::1735609043::0::1::::<>Label<>::
-player.tscn::PackedScene::4752360610448023974::1745453357::0::1::::<><>::res://Script/Player/player.gd<>uid://ciq2clr7q7qy4::::res://assests/CharacterAssets/Adventurer-1.5/adventurer-v1.5-Sheet.png<>uid://ct2bv87xa6gvk::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png<>uid://b2ah1ope4ht3w::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Run.png<>uid://t57l73lvwrv5::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack2.png<>uid://uxmyhwac8i1::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack.png<>uid://dhvgpppbnou14::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Jump.png<>uid://dx05bk2nls1c0::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Dash.png<>uid://c6ckv7ebop4ca::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Fall.png<>res://Script/Player/Camera2D.gd<>uid://dv5ieti46nab7::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_CrouchAttack.png<>uid://2japemjny6yc::::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Death.png<>uid://ht41b8tt7dvg::::res://assests/SoundAssets/Music/music_jewels.ogg<>uid://hhy1wyxvcvow::::res://assests/SoundAssets/sfx/PlayerSfx/PoofDash_sfx.wav<>res://Scene/Label.gd<>uid://bipnppc86to24::::res://assests/SoundAssets/sfx/PlayerSfx/Jump_sfxfr.mp3<>uid://drhwfpligmh06::::res://assests/CharacterAssets/Health/heart_16x16.png<>uid://oww8wpy3gnue::::res://assests/SoundAssets/sfx/PlayerSfx/Running_sfx.mp3<>uid://byxkha8pftixd::::res://assests/SoundAssets/sfx/PlayerSfx/sword_sfx.wav<>uid://disy4vrgayvgn::::res://Scene/UI Scene/pause_menu.tscn<>uid://dcjwtx5qxlxll::::res://Scene/UI Scene/game_over.tscn
+player.tscn::PackedScene::4752360610448023974::1745458341::0::1::::<><>::res://Script/Player/player.gd<>uid://ciq2clr7q7qy4::::res://assests/CharacterAssets/Adventurer-1.5/adventurer-v1.5-Sheet.png<>uid://ct2bv87xa6gvk::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png<>uid://b2ah1ope4ht3w::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Run.png<>uid://t57l73lvwrv5::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack2.png<>uid://uxmyhwac8i1::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack.png<>uid://dhvgpppbnou14::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Jump.png<>uid://dx05bk2nls1c0::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Dash.png<>uid://c6ckv7ebop4ca::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Fall.png<>res://Script/Player/Camera2D.gd<>uid://dv5ieti46nab7::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_CrouchAttack.png<>uid://2japemjny6yc::::res://assests/CharacterAssets/Adventurer-1.5/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Death.png<>uid://ht41b8tt7dvg::::res://assests/SoundAssets/Music/music_jewels.ogg<>uid://hhy1wyxvcvow::::res://assests/SoundAssets/sfx/PlayerSfx/PoofDash_sfx.wav<>res://Scene/Label.gd<>uid://bipnppc86to24::::res://assests/SoundAssets/sfx/PlayerSfx/Jump_sfxfr.mp3<>uid://drhwfpligmh06::::res://assests/CharacterAssets/Health/heart_16x16.png<>uid://oww8wpy3gnue::::res://assests/SoundAssets/sfx/PlayerSfx/Running_sfx.mp3<>uid://byxkha8pftixd::::res://assests/SoundAssets/sfx/PlayerSfx/sword_sfx.wav<>uid://disy4vrgayvgn::::res://Scene/UI Scene/pause_menu.tscn<>uid://dcjwtx5qxlxll::::res://Scene/UI Scene/game_over.tscn
 range_enemy.tscn::PackedScene::1474555406837762883::1745441794::0::1::::<><>::res://Script/Enemy/range_enemy.gd<>uid://d3uf1txw2ctof::::res://assests/CharacterAssets/Necromancer_creativekind-Sheet.png<>uid://bsdl26s5toenh::::res://assests/CharacterAssets/Bubbles/Greyscale/32x32/bubble_6_grayscale.png
 void_area.tscn::PackedScene::6328305822418347936::1745021929::0::1::::<><>::res://VoidArea.gd
 world.gd::GDScript::-1::1742569555::0::1::::<>Node2D<>::
-world.tscn::PackedScene::3767018633967888219::1745453356::0::1::::<><>::uid://x4ie4sdcttwq::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background1.png<>uid://bl6jdogdispmk::::res://Scene/EnemyScene.tscn<>uid://d0drbopmk0w16::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/mainlev_build.png<>res://Script/Level1.gd<>uid://ccitl83n7gb78::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background2.png<>uid://b8ycxj1kuxt6e::::res://Scene/player.tscn<>uid://dv1bwom1el5xt::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background3.png<>uid://ctr8bjkw7fxnf::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background4a.png<>uid://wjdxp5cumskd::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background4b.png<>uid://vajyhg8oc33l::::res://Scene/range_enemy.tscn<>uid://cwfqji2gt5vi3::::res://Scene/void_area.tscn<>uid://23v461flxbnv::::res://assests/CharacterAssets/Health/hearts/heartDisplay.png<>res://Scene/Killzone.gd<>uid://dcjwtx5qxlxll::::res://Scene/UI Scene/game_over.tscn<>uid://cxqnty5p326vn::::res://assests/SoundAssets/Music/Battle in the winter.mp3<>uid://c0ycfcjclicvk::::res://Scene/checkpoint.tscn
+world.tscn::PackedScene::3767018633967888219::1745458341::0::1::::<><>::uid://x4ie4sdcttwq::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background1.png<>uid://bl6jdogdispmk::::res://Scene/EnemyScene.tscn<>uid://d0drbopmk0w16::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/mainlev_build.png<>res://Script/Level1.gd<>uid://ccitl83n7gb78::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background2.png<>uid://b8ycxj1kuxt6e::::res://Scene/player.tscn<>uid://dv1bwom1el5xt::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background3.png<>uid://ctr8bjkw7fxnf::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background4a.png<>uid://wjdxp5cumskd::::res://assests/Map_Assets/PixelFantasy_Caves_1.0/background4b.png<>uid://vajyhg8oc33l::::res://Scene/range_enemy.tscn<>uid://cwfqji2gt5vi3::::res://Scene/void_area.tscn<>uid://23v461flxbnv::::res://assests/CharacterAssets/Health/hearts/heartDisplay.png<>res://Scene/Killzone.gd<>uid://dcjwtx5qxlxll::::res://Scene/UI Scene/game_over.tscn<>uid://cxqnty5p326vn::::res://assests/SoundAssets/Music/Battle in the winter.mp3<>uid://c0ycfcjclicvk::::res://Scene/checkpoint.tscn
 ::res://Scene/DASH/::1745441794
 dash_effect.tscn::PackedScene::4946501962440602743::1745352367::0::1::::<><>::res://Scene/DASH/dash_effect_Shader.gdshader<>uid://c61g6xtk2y4vv::::res://assests/CharacterAssets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_Dash.png<>res://Script/Player/DashEffect.gd
 dash_effect_Shader.gdshader::Shader::-1::1745441794::0::1::::<><>::
 dash_flash.tscn::PackedScene::1026929657113845244::1744811844::0::1::::<><>::uid://c7r2eseeyrsof::::res://assests/CharacterAssets/Adventurer-1.5/Individual Sprites/adventurer-crnr-jmp-00.png
-::res://Scene/Levels/::1745453357
-intro.tscn::PackedScene::9112050866059218208::1745453357::0::1::::<><>::uid://cxf7lecc4il8i::::res://assests/GameArt/openart-image_OasAJqtB_1745152981276_raw.jpg<>res://Script/Transitions/intro.gd<>uid://cqv0nebu63pr5::::res://assests/CharacterAssets/Fonts/m6x11plus.ttf<>uid://bkqcrcnnqvcal::::res://assests/GameArt/openart-image_3wiiVceq_1745157774792_raw.jpg<>uid://kcxcqd8gp6p7::::res://assests/CharacterAssets/Fonts/m5x7.ttf<>uid://mlp1x7uh3pya::::res://assests/GameArt/openart-image_N3-wJ6c5_1745160061035_raw.jpg<>uid://dawvtge2ij4bc::::res://assests/SoundAssets/Music/Path to Lake Land.ogg<>uid://boy15gnplhwjd::::res://assests/GameArt/openart-image_yUdLK_oL_1745162888754_raw.jpg<>uid://df4am84jxbsr5::::res://assests/GameArt/openart-image_4dRB5X3m_1745164063777_raw.jpg<>uid://b3vodqx3tfuq5::::res://assests/GameArt/openart-image_WyWjypuJ_1745164135746_raw.jpg
-main_menu.tscn::PackedScene::7611012555535773553::1745453357::0::1::::<><>::res://Script/Transitions/main_menu.gd<>uid://d3rbbr6ogxp1i::::res://assests/CharacterAssets/Fonts/DungeonFont.ttf<>uid://kcxcqd8gp6p7::::res://assests/CharacterAssets/Fonts/m5x7.ttf<>uid://cqv0nebu63pr5::::res://assests/CharacterAssets/Fonts/m6x11plus.ttf<>uid://23v461flxbnv::::res://assests/CharacterAssets/Health/hearts/heartDisplay.png<>uid://cnbylhtoj67sc::::res://assests/SoundAssets/Music/One Man Symphony - A New Day's Hurry (Free)/One Man Symphony - A New Day's Hurry (Free) - 01 A New Day Begins (General Background Music).mp3<>uid://c6n4kyp7nnfnc::::res://assests/SoundAssets/sfx/UISfx/Select_Sfx.mp3<>uid://dn2go0ve78lve::::res://assests/SoundAssets/sfx/UISfx/Click_Sfx.mp3
-tutorial.tscn::PackedScene::3015445634464333574::1745453356::0::1::::<><>::res://tutorial.gd<>uid://c0ycfcjclicvk::::res://Scene/checkpoint.tscn<>uid://c4wed5vt4x1p3::::res://assests/Map_Assets/Checkpoint/Dimensional_Portal.png<>uid://b8ycxj1kuxt6e::::res://Scene/player.tscn<>uid://dvntwam3r3xaw::::res://assests/Map_Assets/clouds/cloud_single/cloud1.png<>res://Script/UpDownCloud.gd<>res://Script/Transitions/End.gd<>uid://dfumi4q0ker0y::::res://assests/Map_Assets/clouds/cloud_single/cloud3.png<>uid://uok4c58g1utl::::res://assests/SoundAssets/Music/Heavenly Loop.ogg<>uid://bl6jdogdispmk::::res://Scene/EnemyScene.tscn<>uid://vajyhg8oc33l::::res://Scene/range_enemy.tscn
-::res://Scene/UI Scene/::1745453356
-game_over.tscn::PackedScene::7319590097206308773::1745453356::0::1::::<><>::uid://d3rbbr6ogxp1i::::res://assests/CharacterAssets/Fonts/DungeonFont.ttf<>res://Script/UI Script/game_over.gd<>uid://cqv0nebu63pr5::::res://assests/CharacterAssets/Fonts/m6x11plus.ttf<>uid://23v461flxbnv::::res://assests/CharacterAssets/Health/hearts/heartDisplay.png<>uid://cn8imnemstrt1::::res://assests/SoundAssets/sfx/UISfx/dark-souls-you-died-sound-effect_hm5sYFG.mp3
+::res://Scene/Levels/::1745458341
+intro.tscn::PackedScene::9112050866059218208::1745458341::0::1::::<><>::uid://cxf7lecc4il8i::::res://assests/GameArt/openart-image_OasAJqtB_1745152981276_raw.jpg<>res://Script/Transitions/intro.gd<>uid://cqv0nebu63pr5::::res://assests/CharacterAssets/Fonts/m6x11plus.ttf<>uid://bkqcrcnnqvcal::::res://assests/GameArt/openart-image_3wiiVceq_1745157774792_raw.jpg<>uid://kcxcqd8gp6p7::::res://assests/CharacterAssets/Fonts/m5x7.ttf<>uid://mlp1x7uh3pya::::res://assests/GameArt/openart-image_N3-wJ6c5_1745160061035_raw.jpg<>uid://dawvtge2ij4bc::::res://assests/SoundAssets/Music/Path to Lake Land.ogg<>uid://boy15gnplhwjd::::res://assests/GameArt/openart-image_yUdLK_oL_1745162888754_raw.jpg<>uid://df4am84jxbsr5::::res://assests/GameArt/openart-image_4dRB5X3m_1745164063777_raw.jpg<>uid://b3vodqx3tfuq5::::res://assests/GameArt/openart-image_WyWjypuJ_1745164135746_raw.jpg
+main_menu.tscn::PackedScene::7611012555535773553::1745458341::0::1::::<><>::res://Script/Transitions/main_menu.gd<>uid://d3rbbr6ogxp1i::::res://assests/CharacterAssets/Fonts/DungeonFont.ttf<>uid://kcxcqd8gp6p7::::res://assests/CharacterAssets/Fonts/m5x7.ttf<>uid://cqv0nebu63pr5::::res://assests/CharacterAssets/Fonts/m6x11plus.ttf<>uid://23v461flxbnv::::res://assests/CharacterAssets/Health/hearts/heartDisplay.png<>uid://cnbylhtoj67sc::::res://assests/SoundAssets/Music/One Man Symphony - A New Day's Hurry (Free)/One Man Symphony - A New Day's Hurry (Free) - 01 A New Day Begins (General Background Music).mp3<>uid://c6n4kyp7nnfnc::::res://assests/SoundAssets/sfx/UISfx/Select_Sfx.mp3<>uid://dn2go0ve78lve::::res://assests/SoundAssets/sfx/UISfx/Click_Sfx.mp3
+tutorial.tscn::PackedScene::3015445634464333574::1745458340::0::1::::<><>::res://tutorial.gd<>uid://c0ycfcjclicvk::::res://Scene/checkpoint.tscn<>uid://c4wed5vt4x1p3::::res://assests/Map_Assets/Checkpoint/Dimensional_Portal.png<>uid://b8ycxj1kuxt6e::::res://Scene/player.tscn<>uid://dvntwam3r3xaw::::res://assests/Map_Assets/clouds/cloud_single/cloud1.png<>res://Script/UpDownCloud.gd<>res://Script/Transitions/End.gd<>uid://dfumi4q0ker0y::::res://assests/Map_Assets/clouds/cloud_single/cloud3.png<>uid://uok4c58g1utl::::res://assests/SoundAssets/Music/Heavenly Loop.ogg<>uid://bl6jdogdispmk::::res://Scene/EnemyScene.tscn<>uid://vajyhg8oc33l::::res://Scene/range_enemy.tscn
+::res://Scene/Traps Scene/::1745459901
+::res://Scene/UI Scene/::1745458340
+game_over.tscn::PackedScene::7319590097206308773::1745458340::0::1::::<><>::uid://d3rbbr6ogxp1i::::res://assests/CharacterAssets/Fonts/DungeonFont.ttf<>res://Script/UI Script/game_over.gd<>uid://cqv0nebu63pr5::::res://assests/CharacterAssets/Fonts/m6x11plus.ttf<>uid://23v461flxbnv::::res://assests/CharacterAssets/Health/hearts/heartDisplay.png<>uid://cn8imnemstrt1::::res://assests/SoundAssets/sfx/UISfx/dark-souls-you-died-sound-effect_hm5sYFG.mp3<>uid://dn2go0ve78lve::::res://assests/SoundAssets/sfx/UISfx/Click_Sfx.mp3<>uid://c6n4kyp7nnfnc::::res://assests/SoundAssets/sfx/UISfx/Select_Sfx.mp3
 pause_menu.tscn::PackedScene::7759441725131883757::1745441791::0::1::::<><>::uid://d3rbbr6ogxp1i::::res://assests/CharacterAssets/Fonts/DungeonFont.ttf<>res://Script/UI Script/pause_menu.gd<>uid://kcxcqd8gp6p7::::res://assests/CharacterAssets/Fonts/m5x7.ttf<>uid://drhwfpligmh06::::res://assests/CharacterAssets/Health/heart_16x16.png<>uid://dn2go0ve78lve::::res://assests/SoundAssets/sfx/UISfx/Click_Sfx.mp3<>uid://c6n4kyp7nnfnc::::res://assests/SoundAssets/sfx/UISfx/Select_Sfx.mp3
 ::res://Script/::1745443472
 Bonfire.gd::GDScript::-1::1745438385::0::1::::<>Area2D<>::
@@ -793,10 +794,10 @@ Enemy.gd::GDScript::-1::1745408610::0::1::::Enemy<>CharacterBody2D<>::
 fireball.gd::GDScript::-1::1745427345::0::1::::Homing_Fireball<>Area2D<>::
 Idle.gd::GDScript::-1::1737034296::0::1::::Idle<>State<>::
 range_enemy.gd::GDScript::-1::1745408610::0::1::::<>CharacterBody2D<>::
-::res://Script/Player/::1745453356
+::res://Script/Player/::1745454435
 Camera2D.gd::GDScript::-1::1743424695::0::1::::<>Camera2D<>::
 DashEffect.gd::GDScript::-1::1745264733::0::1::::<>AnimatedSprite2D<>::
-player.gd::GDScript::-1::1745453356::0::1::::Player<>CharacterBody2D<>::
+player.gd::GDScript::-1::1745454435::0::1::::Player<>CharacterBody2D<>::
 ::res://Script/State/::1745264451
 State.gd::GDScript::-1::1728645571::0::1::::State<>Node<>::
 StateMachine.gd::GDScript::-1::1737034296::0::1::::StateMachine<>Node<>::
@@ -804,6 +805,6 @@ StateMachine.gd::GDScript::-1::1737034296::0::1::::StateMachine<>Node<>::
 End.gd::GDScript::-1::1745406167::0::1::::<>Sprite2D<>::
 intro.gd::GDScript::-1::1745441678::0::1::::<>Control<>::
 main_menu.gd::GDScript::-1::1745441678::0::1::::<>Control<>::
-::res://Script/UI Script/::1745453073
-game_over.gd::GDScript::-1::1745453073::0::1::::<>Control<>::
+::res://Script/UI Script/::1745457443
+game_over.gd::GDScript::-1::1745457443::0::1::::<>Control<>::
 pause_menu.gd::GDScript::-1::1745432266::0::1::::<>Control<>::

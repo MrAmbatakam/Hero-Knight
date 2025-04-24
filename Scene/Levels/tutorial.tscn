@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://bi7x7jc78rmne"]
+[gd_scene load_steps=30 format=3 uid="uid://bi7x7jc78rmne"]
 
 [ext_resource type="Script" path="res://tutorial.gd" id="1_8e2vh"]
 [ext_resource type="PackedScene" uid="uid://c0ycfcjclicvk" path="res://Scene/checkpoint.tscn" id="2_4clfi"]
@@ -11,6 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://uok4c58g1utl" path="res://assests/SoundAssets/Music/Heavenly Loop.ogg" id="3_qnymi"]
 [ext_resource type="PackedScene" uid="uid://bl6jdogdispmk" path="res://Scene/EnemyScene.tscn" id="6_27646"]
 [ext_resource type="PackedScene" uid="uid://vajyhg8oc33l" path="res://Scene/range_enemy.tscn" id="11_08vgw"]
+[ext_resource type="PackedScene" uid="uid://cue0sphwfnyw1" path="res://Scene/Traps Scene/ceiling_trap.tscn" id="12_snysd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8vdl7"]
 size = Vector2(88, 40)
@@ -372,6 +373,13 @@ position = Vector2(3112, -8)
 [node name="RangeEnemy" parent="RangeEnemyNode" instance=ExtResource("11_08vgw")]
 position = Vector2(2056, 184)
 
+[node name="Traps" type="Node" parent="."]
+
+[node name="CeilingTraps" type="Node" parent="Traps"]
+
+[node name="CeilingTrap" parent="Traps/CeilingTraps" instance=ExtResource("12_snysd")]
+position = Vector2(310, 288)
+
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
 z_index = -1
@@ -419,6 +427,9 @@ stream = ExtResource("3_qnymi")
 
 [node name="Checkpoint2" parent="." instance=ExtResource("2_4clfi")]
 position = Vector2(1112, 88)
+
+[node name="CeilingTrap" parent="." instance=ExtResource("12_snysd")]
+position = Vector2(341, 288)
 
 [connection signal="area_entered" from="End_Sprite/End_Area2D" to="End_Sprite" method="_on_area_2d_area_entered"]
 [connection signal="animation_finished" from="Portal_Transition" to="End_Sprite" method="_on_portal_transition_animation_finished"]

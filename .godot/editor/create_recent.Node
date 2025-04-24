@@ -1,2 +1,8 @@
+Node
+TextureRect
+CollisionShape2D
+Area2D
+AnimationPlayer
+Sprite2D
 AudioStreamPlayer2D
 AudioStreamPlayer

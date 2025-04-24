@@ -1,7 +1,7 @@
 class_name Player
 extends CharacterBody2D
 
-var player_health = 2
+var player_health = 5
 @onready var game_over = $UI/GameOver
 const SPEED = 150
 const JUMP_VELOCITY = -400
