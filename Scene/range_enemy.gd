@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var health = 1
+var health = 2
 var deflect_chance = 0
 var remaining_deflects = 0
 var can_spawn_fireball = true 

@@ -355,7 +355,7 @@ libraries = {
 }
 
 [node name="Player" parent="." instance=ExtResource("2_nhlbb")]
-position = Vector2(176, 296)
+position = Vector2(275, 352)
 
 [node name="CloseEnemy" type="Node" parent="."]
 
@@ -381,15 +381,15 @@ position = Vector2(2056, 184)
 [node name="CeilingTraps" type="Node" parent="Traps"]
 
 [node name="CeilingTrap" parent="Traps/CeilingTraps" instance=ExtResource("12_snysd")]
-position = Vector2(310, 288)
+position = Vector2(1134, 85)
 
 [node name="CeilingTrap2" parent="Traps/CeilingTraps" instance=ExtResource("12_snysd")]
-position = Vector2(341, 288)
+position = Vector2(1102, 85)
 
 [node name="FireTraps" type="Node" parent="Traps"]
 
 [node name="FireTrap" parent="Traps/FireTraps" instance=ExtResource("13_6ga7y")]
-position = Vector2(261, 290)
+position = Vector2(991, 157)
 
 [node name="SawTraps" type="Node" parent="Traps"]
 
@@ -441,10 +441,10 @@ color = Color(0, 0, 0, 1)
 stream = ExtResource("3_qnymi")
 
 [node name="Checkpoint2" parent="." instance=ExtResource("2_4clfi")]
-position = Vector2(1112, 88)
+position = Vector2(1701, 81)
 
 [node name="MovingSaw" parent="." instance=ExtResource("14_neafy")]
-position = Vector2(69, 297)
+position = Vector2(741, 211)
 
 [node name="ArrowTrap" parent="." instance=ExtResource("15_cfdwj")]
 position = Vector2(365, 304)

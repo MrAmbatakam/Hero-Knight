@@ -1,9 +1,9 @@
+Node
 Area2D
 CollisionShape2D
 Sprite2D
 CharacterBody2D
 AnimationPlayer
-Node
 Timer
 TextureRect
 AudioStreamPlayer2D

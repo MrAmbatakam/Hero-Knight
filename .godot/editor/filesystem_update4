@@ -17,3 +17,8 @@ res://Scene/Traps Scene/arrow.tscn
 res://Script/Traps Script/arrow.gd
 res://Scene/Traps Scene/arrow_trap.tscn
 res://Script/Traps Script/arrow_trap.gd
+res://Script/Transitions/End.gd
+res://Scene/End_Sprite2.gd
+res://Script/Level1.gd
+res://Scene/range_enemy.tscn
+res://Scene/range_enemy.gd

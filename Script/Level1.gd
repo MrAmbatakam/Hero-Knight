@@ -14,3 +14,11 @@ func _process(delta):
 func _on_portal_transition_animation_finished(anim_name):
 	#$Level1_Music.play()
 	pass
+
+
+func _on_end_area_2d_area_entered(area):
+	pass # Replace with function body.
+
+
+func _on_animation_player_animation_finished(anim_name):
+	pass # Replace with function body.

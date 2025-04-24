@@ -19,3 +19,5 @@ texture = ExtResource("1_70uyc")
 position = Vector2(-8, 0)
 shape = SubResource("RectangleShape2D_gf61o")
 debug_color = Color(0.985475, 0.0981653, 0.16573, 0.42)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
