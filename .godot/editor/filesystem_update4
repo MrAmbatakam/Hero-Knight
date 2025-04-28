@@ -1,30 +1,9 @@
-res://Scene/world.tscn
-res://Scene/UI Scene/game_over.tscn
-res://Script/UI Script/game_over.gd
 res://Scene/Levels/tutorial.tscn
+res://Scene/world.tscn
 res://Scene/player.tscn
-res://Script/Player/player.gd
-res://Scene/Levels/intro.tscn
-res://tutorial.gd
-res://Scene/Levels/main_menu.tscn
-res://Script/Traps Script/ceiling_trap.gd
-res://Scene/Traps Scene/ceiling_trap.tscn
-res://Script/Traps Script/fire_trap.gd
 res://Scene/Traps Scene/fire_trap.tscn
-res://Scene/Traps Scene/moving_saw.tscn
-res://Script/Traps Script/moving_saw.gd
-res://Scene/Traps Scene/arrow.tscn
-res://Script/Traps Script/arrow.gd
 res://Scene/Traps Scene/arrow_trap.tscn
-res://Script/Traps Script/arrow_trap.gd
-res://Script/Transitions/End.gd
-res://Scene/End_Sprite2.gd
-res://Script/Level1.gd
-res://Scene/range_enemy.tscn
-res://Scene/range_enemy.gd
-res://Script/Enemy/Enemy.gd
+res://Scene/Traps Scene/arrow.tscn
 res://Scene/EnemyScene.tscn
-res://Scene/UI Scene/pause_menu.tscn
-res://Scene/UI Scene/thank_you_for_playing.tscn
-res://Script/UI Script/thank_you_for_playing.gd
 res://Scene/fireball.tscn
+res://Scene/UI Scene/game_over.tscn
